@@ -1,15 +1,10 @@
 import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
+// Using system fonts during build to avoid network font fetching issues
 import "./globals.css";
 import ClientBody from "./ClientBody";
 import Script from "next/script";
 import Animations from './animations';
 
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: {
@@ -72,7 +67,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} scroll-smooth`}>
+      <html lang="en" className="scroll-smooth">
       <head>
         <Script
           crossOrigin="anonymous"
