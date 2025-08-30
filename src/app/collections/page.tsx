@@ -45,7 +45,7 @@ export default function CollectionsPage() {
   return (
     <MainLayout>
       {/* Hero Section */}
-      <section className="relative w-full h-[40vh] bg-black text-white mt-20">
+      <section className="relative w-full min-h-[40vh] md:h-[40vh] bg-black text-white mt-20">
         <div className="absolute inset-0 z-0">
           <Image
             src="https://ext.same-assets.com/1118492138/1829320189.jpeg"
