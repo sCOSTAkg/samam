@@ -1,4 +1,7 @@
 import type { Config } from "tailwindcss";
+import plugin from "tailwindcss/plugin";
+import tailwindcssAnimate from "tailwindcss-animate";
+import type { PluginAPI } from "tailwindcss/types/config";
 
 export default {
     darkMode: ["class"],
@@ -119,8 +122,8 @@ export default {
     }
   },
   plugins: [
-    require("tailwindcss-animate"),
-    function({ addBase, addComponents }: any) {
+    tailwindcssAnimate,
+    plugin(({ addBase, addComponents }: PluginAPI) => {
       addBase({
         '.animate-fade-in-scroll': {
           opacity: '0',
@@ -157,6 +160,6 @@ export default {
           }
         });
       }
-    }
+    })
   ],
 } satisfies Config;
