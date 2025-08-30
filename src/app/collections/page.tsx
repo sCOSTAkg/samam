@@ -6,37 +6,37 @@ export default function CollectionsPage() {
   const collections = [
     {
       id: 'spring-summer-2027',
-      title: 'Spring-Summer 27',
-      description: 'From court to commute, SS27 reflects the depth and range of what GRANDTEX does best—crafting versatile leathers that scale with your needs.',
+      title: 'Весна-Лето 27',
+      description: 'От спортзала до поездки на работу SS27 отражает глубину и масштаб того, что GRANDTEX делает лучше всего — создаёт универсальные кожи, которые адаптируются к вашим потребностям.',
       image: 'https://ext.same-assets.com/1118492138/1829320189.jpeg',
-      season: 'Spring-Summer',
+      season: 'Весна-Лето',
       year: '2027',
       isLatest: true,
     },
     {
       id: 'fw26',
-      title: 'Fall-Winter 26',
-      description: 'Our Fall-Winter 26 collection combines durability with sophistication, offering premium leathers designed for the colder season.',
+      title: 'Осень-Зима 26',
+      description: 'Коллекция Осень-Зима 26 сочетает прочность и изысканность, предлагая премиальные кожи, созданные для холодного сезона.',
       image: 'https://ext.same-assets.com/1118492138/68077734.jpeg',
-      season: 'Fall-Winter',
+      season: 'Осень-Зима',
       year: '2026',
       isLatest: false,
     },
     {
       id: 'spring-summer-2026',
-      title: 'Spring-Summer 26',
-      description: 'The Spring-Summer 26 collection showcases lightweight, breathable leathers perfect for warmer weather and outdoor activities.',
+      title: 'Весна-Лето 26',
+      description: 'Коллекция Весна-Лето 26 представляет лёгкие и дышащие кожи, идеально подходящие для тёплой погоды и активного отдыха.',
       image: 'https://ext.same-assets.com/1118492138/3513175735.jpeg',
-      season: 'Spring-Summer',
+      season: 'Весна-Лето',
       year: '2026',
       isLatest: false,
     },
     {
       id: 'fw25',
-      title: 'Fall-Winter 25',
-      description: 'Our Fall-Winter 25 collection emphasizes rich textures and deep colors, perfect for creating statement pieces in the cooler months.',
+      title: 'Осень-Зима 25',
+      description: 'Коллекция Осень-Зима 25 подчёркивает насыщенные текстуры и глубокие цвета, идеально подходящие для выразительных изделий в холодные месяцы.',
       image: 'https://ext.same-assets.com/1118492138/3505676007.jpeg',
-      season: 'Fall-Winter',
+      season: 'Осень-Зима',
       year: '2025',
       isLatest: false,
     },
@@ -58,9 +58,9 @@ export default function CollectionsPage() {
 
         <div className="relative z-10 h-full flex items-center">
           <div className="container mx-auto px-8">
-            <h1 className="text-5xl font-bold mb-4">Collections</h1>
+            <h1 className="text-5xl font-bold mb-4">Коллекции</h1>
             <p className="text-xl max-w-2xl">
-              Explore our seasonal leather collections, designed to meet the evolving needs of fashion and functionality.
+              Изучите наши сезонные коллекции кожи, созданные для удовлетворения развивающихся потребностей моды и функциональности.
             </p>
           </div>
         </div>
@@ -83,15 +83,15 @@ export default function CollectionsPage() {
 
             <div className="lg:w-1/2 flex flex-col justify-center">
               <div className="inline-block px-4 py-1 bg-accent text-white rounded-full text-sm font-medium mb-4">
-                Latest Collection
+                Последняя коллекция
               </div>
               <h2 className="text-4xl font-bold mb-4">{collections[0].title}</h2>
               <p className="text-lg text-gray-700 mb-8">{collections[0].description}</p>
               <p className="mb-8">
-                As part of our rebrand, this season marks a renewed commitment to serving brands of every size with precision, purpose, and partnership. Whether you're building high-volume lines or limited-run silhouettes, our products are designed to adapt.
+                В рамках нашего ребрендинга этот сезон ознаменует обновлённую приверженность обслуживать бренды любого размера с точностью, целью и партнёрством. Независимо от того, создаёте ли вы массовые линии или лимитированные силуэты, наши продукты готовы адаптироваться.
               </p>
               <Link href={`/collections/${collections[0].id}`} className="px-6 py-3 bg-black text-white rounded-full inline-block self-start">
-                Explore Collection
+                Изучить коллекцию
               </Link>
             </div>
           </div>
@@ -101,7 +101,7 @@ export default function CollectionsPage() {
       {/* Past Collections */}
       <section className="py-16 px-8 bg-gray-50">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-bold mb-12">Past Collections</h2>
+          <h2 className="text-3xl font-bold mb-12">Прошлые коллекции</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {collections.slice(1).map((collection) => (
@@ -128,7 +128,7 @@ export default function CollectionsPage() {
                       {collection.season}, {collection.year}
                     </span>
                     <span className="text-accent font-medium group-hover:underline">
-                      View Details
+                      Подробнее
                     </span>
                   </div>
                 </div>
@@ -141,18 +141,18 @@ export default function CollectionsPage() {
       {/* Lookbook Section */}
       <section className="py-16 px-8">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">Collection Lookbooks</h2>
+          <h2 className="text-3xl font-bold mb-4">Лукбуки коллекций</h2>
           <p className="text-lg text-gray-700 mb-12 max-w-3xl mx-auto">
-            Download our collection lookbooks for detailed information on leather specifications, colors, and applications.
+            Скачайте лукбуки коллекций для подробной информации о характеристиках, цветах и вариантах применения кожи.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {collections.map((collection) => (
               <div key={collection.id} className="bg-gray-50 p-6 rounded-lg">
                 <h3 className="text-xl font-bold mb-2">{collection.title}</h3>
-                <p className="text-gray-600 mb-4">Lookbook</p>
+                <p className="text-gray-600 mb-4">Лукбук</p>
                 <button className="px-4 py-2 bg-black text-white rounded-md text-sm w-full">
-                  Download PDF
+                  Скачать PDF
                 </button>
               </div>
             ))}
@@ -163,12 +163,12 @@ export default function CollectionsPage() {
       {/* Contact CTA */}
       <section className="py-16 px-8 bg-gray-900 text-white">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">Need Custom Solutions?</h2>
+          <h2 className="text-3xl font-bold mb-4">Нужны индивидуальные решения?</h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto">
-            Our team can help you develop custom leather solutions tailored to your specific requirements and brand identity.
+            Наша команда поможет разработать индивидуальные кожаные решения, адаптированные под ваши требования и идентичность бренда.
           </p>
           <Link href="/contact" className="px-8 py-3 bg-white text-gray-900 rounded-full text-lg inline-block">
-            Contact Our Team
+            Связаться с нашей командой
           </Link>
         </div>
       </section>

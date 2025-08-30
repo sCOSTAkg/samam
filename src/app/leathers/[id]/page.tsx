@@ -8,15 +8,15 @@ const getLeatherProduct = (id: string) => {
     'opulent': {
       id: 'opulent',
       name: 'Opulent',
-      collection: 'Spring-Summer 27',
-      type: 'Grain',
-      finish: 'Naturally Tumbled',
-      treatment: 'Semi-Aniline',
-      description: 'Opulent leather brings a rich, sophisticated texture with excellent color depth. Perfect for luxury footwear and accessories that demand both elegance and durability.',
-      colors: ['Black', 'Brown', 'Burgundy', 'Navy', 'Olive'],
-      thickness: '1.2-1.4mm',
-      applications: ['Luxury Footwear', 'Bags', 'Belts', 'Wallets'],
-      sustainability: 'Produced using our water-efficient processes, reducing water consumption by 30% compared to traditional methods.',
+      collection: 'Весна-Лето 27',
+      type: 'Грейн',
+      finish: 'Натуральная барабанная отделка',
+      treatment: 'Полуанилиновая',
+      description: 'Кожа Opulent обладает богатой, изысканной текстурой и отличной глубиной цвета. Идеально подходит для люксовой обуви и аксессуаров, где важны элегантность и долговечность.',
+      colors: ['Чёрный', 'Коричневый', 'Бордовый', 'Тёмно-синий', 'Олива'],
+      thickness: '1.2-1.4мм',
+      applications: ['Люксовая обувь', 'Сумки', 'Ремни', 'Кошельки'],
+      sustainability: 'Произведена с использованием наших водосберегающих процессов, что снижает потребление воды на 30% по сравнению с традиционными методами.',
       images: [
         'https://ext.same-assets.com/1118492138/331861169.jpeg',
         'https://ext.same-assets.com/1118492138/3505676007.jpeg',
@@ -26,15 +26,15 @@ const getLeatherProduct = (id: string) => {
     'papyrus': {
       id: 'papyrus',
       name: 'Papyrus',
-      collection: 'Spring-Summer 27',
-      type: 'Grain',
-      finish: 'Naturally Tumbled',
-      treatment: 'Specialty',
-      description: 'Papyrus leather offers a distinctive, subtle texture reminiscent of ancient paper. This specialty leather is treated with innovative techniques.',
-      colors: ['White', 'Cream', 'Sand', 'Light Gray', 'Natural'],
-      thickness: '1.0-1.2mm',
-      applications: ['Fashion Footwear', 'Accessories', 'Upholstery Accents'],
-      sustainability: 'Processed using our biodegradable tanning agents, minimizing environmental impact.',
+      collection: 'Весна-Лето 27',
+      type: 'Грейн',
+      finish: 'Натуральная барабанная отделка',
+      treatment: 'Специальная',
+      description: 'Кожа Papyrus имеет характерную, тонкую текстуру, напоминающую древнюю бумагу. Эта специальная кожа обработана инновационными технологиями.',
+      colors: ['Белый', 'Кремовый', 'Песочный', 'Светло-серый', 'Натуральный'],
+      thickness: '1.0-1.2мм',
+      applications: ['Модная обувь', 'Аксессуары', 'Декор мебели'],
+      sustainability: 'Обработана с использованием биоразлагаемых дубильных веществ, что минимизирует воздействие на окружающую среду.',
       images: [
         'https://ext.same-assets.com/1118492138/3988412587.jpeg',
         'https://ext.same-assets.com/1118492138/3757510803.jpeg',
@@ -44,15 +44,15 @@ const getLeatherProduct = (id: string) => {
     'boho': {
       id: 'boho',
       name: 'Boho',
-      collection: 'Spring-Summer 27',
-      type: 'Grain',
-      finish: 'Embossed',
-      treatment: 'Aniline',
-      description: 'Boho leather features a distinctive embossed pattern that adds character and visual interest. The aniline treatment allows the natural beauty to shine through.',
-      colors: ['Cognac', 'Tan', 'Russet', 'Ochre', 'Dark Brown'],
-      thickness: '1.1-1.3mm',
-      applications: ['Casual Footwear', 'Bags', 'Belts', 'Furniture'],
-      sustainability: 'Sourced from LWG Gold-rated tanneries with full traceability.',
+      collection: 'Весна-Лето 27',
+      type: 'Грейн',
+      finish: 'Тиснёная',
+      treatment: 'Анилиновая',
+      description: 'Кожа Boho отличается характерным тиснёным рисунком, который добавляет индивидуальность и визуальный интерес. Анилиновая обработка позволяет проявиться натуральной красоте.',
+      colors: ['Коньячный', 'Рыжий', 'Красновато-коричневый', 'Охра', 'Тёмно-коричневый'],
+      thickness: '1.1-1.3мм',
+      applications: ['Повседневная обувь', 'Сумки', 'Ремни', 'Мебель'],
+      sustainability: 'Происходит из кожевенных заводов с рейтингом LWG Gold с полной прослеживаемостью.',
       images: [
         'https://ext.same-assets.com/1118492138/3513175735.jpeg',
         'https://ext.same-assets.com/1118492138/3036160331.jpeg',
@@ -62,15 +62,15 @@ const getLeatherProduct = (id: string) => {
     'sterling': {
       id: 'sterling',
       name: 'Sterling',
-      collection: 'Spring-Summer 27',
-      type: 'Grain',
-      finish: 'Smooth',
-      treatment: 'Aniline',
-      description: 'Sterling leather boasts a sleek, smooth finish with a subtle natural grain. The aniline treatment enhances its luxurious feel while allowing natural characteristics.',
-      colors: ['Silver Gray', 'Platinum', 'Charcoal', 'Blue-Gray', 'Black'],
-      thickness: '1.2-1.4mm',
-      applications: ['Premium Footwear', 'Luxury Goods', 'Fashion Accessories'],
-      sustainability: 'Processed using solar power, reducing carbon footprint by 40%.',
+      collection: 'Весна-Лето 27',
+      type: 'Грейн',
+      finish: 'Гладкая',
+      treatment: 'Анилиновая',
+      description: 'Кожа Sterling обладает гладкой поверхностью с лёгким природным рисунком. Анилиновая обработка усиливает роскошное ощущение, сохраняя природные характеристики.',
+      colors: ['Серебристо-серый', 'Платиновый', 'Угольный', 'Сине-серый', 'Чёрный'],
+      thickness: '1.2-1.4мм',
+      applications: ['Премиальная обувь', 'Товары класса люкс', 'Модные аксессуары'],
+      sustainability: 'Обработана с использованием солнечной энергии, что сокращает углеродный след на 40%.',
       images: [
         'https://ext.same-assets.com/1118492138/3442149313.jpeg',
         'https://ext.same-assets.com/1118492138/1034291345.jpeg',
@@ -90,10 +90,10 @@ export default async function LeatherDetailPage({ params }: { params: Promise<{ 
     return (
       <MainLayout>
         <div className="py-40 px-8 text-center">
-          <h1 className="text-3xl font-bold mb-4">Product Not Found</h1>
-          <p className="mb-8">The leather product you're looking for doesn't exist or has been removed.</p>
+          <h1 className="text-3xl font-bold mb-4">Продукт не найден</h1>
+          <p className="mb-8">Кожаный продукт, который вы ищете, не существует или был удалён.</p>
           <Link href="/leathers" className="px-6 py-2 bg-black text-white rounded-full">
-            Back to Leathers
+            Назад к списку кож
           </Link>
         </div>
       </MainLayout>
@@ -106,9 +106,9 @@ export default async function LeatherDetailPage({ params }: { params: Promise<{ 
         {/* Breadcrumb */}
         <div className="container mx-auto px-8 mb-8">
           <div className="text-sm text-gray-500">
-            <Link href="/" className="hover:text-black">Home</Link>
+            <Link href="/" className="hover:text-black">Главная</Link>
             <span className="mx-2">/</span>
-            <Link href="/leathers" className="hover:text-black">Leathers</Link>
+            <Link href="/leathers" className="hover:text-black">Кожи</Link>
             <span className="mx-2">/</span>
             <span className="text-black">{product.name}</span>
           </div>
@@ -145,7 +145,7 @@ export default async function LeatherDetailPage({ params }: { params: Promise<{ 
             {/* Product Details */}
             <div>
               <h1 className="text-4xl font-bold mb-2">{product.name}</h1>
-              <p className="text-lg text-gray-600 mb-6">{product.collection} Collection</p>
+              <p className="text-lg text-gray-600 mb-6">Коллекция {product.collection}</p>
 
               <div className="prose max-w-none mb-8">
                 <p>{product.description}</p>
@@ -153,27 +153,27 @@ export default async function LeatherDetailPage({ params }: { params: Promise<{ 
 
               <div className="grid grid-cols-2 gap-x-8 gap-y-6 mb-10">
                 <div>
-                  <h3 className="text-sm font-medium text-gray-500 mb-2">TYPE</h3>
+                  <h3 className="text-sm font-medium text-gray-500 mb-2">ТИП</h3>
                   <p>{product.type}</p>
                 </div>
 
                 <div>
-                  <h3 className="text-sm font-medium text-gray-500 mb-2">FINISH</h3>
+                  <h3 className="text-sm font-medium text-gray-500 mb-2">ОТДЕЛКА</h3>
                   <p>{product.finish}</p>
                 </div>
 
                 <div>
-                  <h3 className="text-sm font-medium text-gray-500 mb-2">TREATMENT</h3>
+                  <h3 className="text-sm font-medium text-gray-500 mb-2">ОБРАБОТКА</h3>
                   <p>{product.treatment}</p>
                 </div>
 
                 <div>
-                  <h3 className="text-sm font-medium text-gray-500 mb-2">THICKNESS</h3>
+                  <h3 className="text-sm font-medium text-gray-500 mb-2">ТОЛЩИНА</h3>
                   <p>{product.thickness}</p>
                 </div>
 
                 <div className="col-span-2">
-                  <h3 className="text-sm font-medium text-gray-500 mb-2">APPLICATIONS</h3>
+                  <h3 className="text-sm font-medium text-gray-500 mb-2">ПРИМЕНЕНИЯ</h3>
                   <div className="flex flex-wrap gap-2">
                     {product.applications.map((app, index) => (
                       <span key={index} className="px-3 py-1 bg-gray-100 rounded-full text-sm">
@@ -184,7 +184,7 @@ export default async function LeatherDetailPage({ params }: { params: Promise<{ 
                 </div>
 
                 <div className="col-span-2">
-                  <h3 className="text-sm font-medium text-gray-500 mb-2">AVAILABLE COLORS</h3>
+                  <h3 className="text-sm font-medium text-gray-500 mb-2">ДОСТУПНЫЕ ЦВЕТА</h3>
                   <div className="flex flex-wrap gap-2">
                     {product.colors.map((color, index) => (
                       <span key={index} className="px-3 py-1 bg-gray-100 rounded-full text-sm">
@@ -197,7 +197,7 @@ export default async function LeatherDetailPage({ params }: { params: Promise<{ 
 
               {/* Sustainability Info */}
               <div className="bg-gray-50 p-6 rounded-md mb-8">
-                <h3 className="text-lg font-medium mb-2">Sustainability</h3>
+                <h3 className="text-lg font-medium mb-2">Устойчивое развитие</h3>
                 <p className="text-gray-700">{product.sustainability}</p>
               </div>
 
@@ -207,14 +207,14 @@ export default async function LeatherDetailPage({ params }: { params: Promise<{ 
                   href="/contact"
                   className="px-6 py-3 bg-black text-white rounded-full"
                 >
-                  Request Samples
+                  Запросить образцы
                 </Link>
 
                 <Link
                   href="/contact"
                   className="px-6 py-3 border border-black rounded-full"
                 >
-                  Technical Specifications
+                  Технические характеристики
                 </Link>
               </div>
             </div>
@@ -224,7 +224,7 @@ export default async function LeatherDetailPage({ params }: { params: Promise<{ 
         {/* Related Products */}
         <section className="mt-20 py-16 px-8 bg-gray-50">
           <div className="container mx-auto">
-            <h2 className="text-3xl font-bold mb-10">You May Also Like</h2>
+            <h2 className="text-3xl font-bold mb-10">Вам также может понравиться</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {Object.values(getLeatherProduct('opulent') ? {

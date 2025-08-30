@@ -7,14 +7,14 @@ export default function TanneriesPage() {
     {
       id: 'vietnam',
       name: 'GRANDTEX Vietnam',
-      location: 'Ho Chi Minh City, Vietnam',
+      location: 'Хошимин, Вьетнам',
       established: 2003,
-      size: '45,000 m²',
-      capacity: '8 million square feet annually',
-      specialties: ['Athletic Footwear Leather', 'Performance Leather', 'Sustainable Processes'],
-      description: 'Our flagship facility in Vietnam specializes in high-performance leathers for athletic and lifestyle footwear. Equipped with state-of-the-art machinery and staffed by skilled technicians, this tannery combines traditional craftsmanship with modern manufacturing techniques.',
-      sustainability: "The Vietnam facility features a cutting-edge water recycling system that reduces water consumption by 40% compared to conventional tanneries. Solar panels provide 30% of the facility's energy needs.",
-      certifications: ['LWG Gold Rated', 'ISO 14001', 'ISO 9001'],
+      size: '45 000 м²',
+      capacity: '8 миллионов кв. футов в год',
+      specialties: ['Кожа для спортивной обуви', 'Высокопроизводительная кожа', 'Устойчивые процессы'],
+      description: 'Наш флагманский завод во Вьетнаме специализируется на высокопроизводительных кожах для спортивной и повседневной обуви. Оснащённый современным оборудованием и укомплектованный квалифицированными специалистами, этот завод сочетает традиционное мастерство с современными технологиями.',
+      sustainability: "Вьетнамское предприятие оснащено передовой системой рециркуляции воды, которая сокращает её потребление на 40% по сравнению с традиционными кожевенными заводами. Солнечные панели обеспечивают 30% потребностей в энергии.",
+      certifications: ['Рейтинг LWG Gold', 'ISO 14001', 'ISO 9001'],
       image: 'https://ext.same-assets.com/1118492138/3036160331.jpeg',
       additionalImages: [
         'https://ext.same-assets.com/1118492138/2874748320.jpeg',
@@ -24,14 +24,14 @@ export default function TanneriesPage() {
     {
       id: 'china',
       name: 'GRANDTEX China',
-      location: 'Guangzhou, China',
+      location: 'Гуанчжоу, Китай',
       established: 2005,
-      size: '38,000 m²',
-      capacity: '6 million square feet annually',
-      specialties: ['Fashion Leather', 'Specialty Finishes', 'Embossed Leather'],
-      description: 'Our China facility focuses on innovative finishes and fashion-forward leathers. This tannery is known for its versatility and ability to produce smaller batches of specialty leathers with unique characteristics and finishes.',
-      sustainability: "The China tannery utilizes a closed-loop production system that minimizes waste and emissions. The facility has reduced chemical usage by 25% through innovative processing techniques.",
-      certifications: ['LWG Silver Rated', 'ISO 14001', 'ZDHC Level 3'],
+      size: '38 000 м²',
+      capacity: '6 миллионов кв. футов в год',
+      specialties: ['Модная кожа', 'Специальные отделки', 'Тиснёная кожа'],
+      description: 'Наш завод в Китае ориентирован на инновационные отделки и модные кожи. Этот завод известен своей универсальностью и способностью производить небольшие партии специализированных кож с уникальными характеристиками и отделками.',
+      sustainability: "Китайский завод использует замкнутый производственный цикл, минимизирующий отходы и выбросы. Предприятие сократило использование химикатов на 25% благодаря инновационным технологическим процессам.",
+      certifications: ['Рейтинг LWG Silver', 'ISO 14001', 'ZDHC уровень 3'],
       image: 'https://ext.same-assets.com/1118492138/800804989.jpeg',
       additionalImages: [
         'https://ext.same-assets.com/1118492138/3646578739.jpeg',
@@ -56,9 +56,9 @@ export default function TanneriesPage() {
 
         <div className="relative z-10 h-full flex items-center">
           <div className="container mx-auto px-8">
-            <h1 className="text-5xl font-bold mb-4">Our Tanneries</h1>
+            <h1 className="text-5xl font-bold mb-4">Наши кожевенные заводы</h1>
             <p className="text-xl max-w-2xl">
-              Explore our world-class leather manufacturing facilities, where tradition meets innovation.
+              Откройте наши производственные площадки мирового уровня, где традиции встречаются с инновациями.
             </p>
           </div>
         </div>
@@ -67,30 +67,30 @@ export default function TanneriesPage() {
       {/* Introduction */}
       <section className="py-16 px-8">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-center">Global Manufacturing Excellence</h2>
+          <h2 className="text-3xl font-bold mb-6 text-center">Мировое производственное превосходство</h2>
 
           <div className="prose prose-lg max-w-none text-center mb-12">
             <p>
-              GRANDTEX operates strategically located tanneries in key manufacturing regions, combining traditional expertise with cutting-edge technology to produce exceptional leathers for global brands.
+              GRANDTEX управляет стратегически расположенными кожевенными заводами в ключевых производственных регионах, сочетая традиционный опыт с передовыми технологиями для производства исключительной кожи для мировых брендов.
             </p>
 
             <p>
-              Our facilities are designed to meet the highest standards of quality, efficiency, and sustainability, ensuring we deliver premium leathers while minimizing our environmental impact.
+              Наши предприятия спроектированы для соответствия самым высоким стандартам качества, эффективности и устойчивости, что позволяет нам поставлять премиальные кожи, минимизируя воздействие на окружающую среду.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div className="bg-gray-50 p-8 rounded-lg">
               <div className="text-4xl font-bold text-accent mb-2">14M+</div>
-              <p className="text-gray-700">Square feet of leather produced annually</p>
+              <p className="text-gray-700">Квадратных футов кожи производится ежегодно</p>
             </div>
             <div className="bg-gray-50 p-8 rounded-lg">
               <div className="text-4xl font-bold text-accent mb-2">600+</div>
-              <p className="text-gray-700">Skilled employees across facilities</p>
+              <p className="text-gray-700">Квалифицированных сотрудников на предприятиях</p>
             </div>
             <div className="bg-gray-50 p-8 rounded-lg">
               <div className="text-4xl font-bold text-accent mb-2">20+</div>
-              <p className="text-gray-700">Years of manufacturing excellence</p>
+              <p className="text-gray-700">Лет производственного превосходства</p>
             </div>
           </div>
         </div>
@@ -248,7 +248,7 @@ export default function TanneriesPage() {
       {/* Quality Assurance */}
       <section className="py-16 px-8 bg-white">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-12 text-center">Quality Assurance</h2>
+            <h2 className="text-3xl font-bold mb-12 text-center">Гарантия качества</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
@@ -257,9 +257,9 @@ export default function TanneriesPage() {
                   <path d="M2 12h20M2 12a10 10 0 0 1 20 0M2 12a10 10 0 0 0 20 0M4 12a8 8 0 0 1 16 0M4 12a8 8 0 0 0 16 0M6 12a6 6 0 0 1 12 0M6 12a6 6 0 0 0 12 0M8 12a4 4 0 0 1 8 0M8 12a4 4 0 0 0 8 0M10 12a2 2 0 0 1 4 0M10 12a2 2 0 0 0 4 0"></path>
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-3">Laboratory Testing</h3>
+              <h3 className="text-xl font-bold mb-3">Лабораторные испытания</h3>
               <p className="text-gray-700">
-                Our in-house laboratories conduct rigorous testing for physical properties, chemical composition, and performance characteristics.
+                Наши внутренние лаборатории проводят тщательные испытания физических свойств, химического состава и эксплуатационных характеристик.
               </p>
             </div>
 
@@ -269,9 +269,9 @@ export default function TanneriesPage() {
                   <path d="M5 12h14M12 5v14"></path>
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-3">Inspection Standards</h3>
+              <h3 className="text-xl font-bold mb-3">Стандарты инспекции</h3>
               <p className="text-gray-700">
-                We maintain strict inspection protocols at every stage of production to ensure consistent quality and identify any issues early.
+                Мы поддерживаем строгие протоколы проверки на каждом этапе производства, чтобы обеспечить стабильное качество и своевременно выявлять любые проблемы.
               </p>
             </div>
 
@@ -281,9 +281,9 @@ export default function TanneriesPage() {
                   <path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-3">Certification</h3>
+              <h3 className="text-xl font-bold mb-3">Сертификация</h3>
               <p className="text-gray-700">
-                Our facilities maintain certification to international standards for quality management, environmental performance, and safety.
+                Наши предприятия имеют сертификаты международных стандартов по управлению качеством, экологической эффективности и безопасности.
               </p>
             </div>
           </div>
@@ -293,12 +293,12 @@ export default function TanneriesPage() {
       {/* Tour CTA */}
       <section className="py-16 px-8 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">Visit Our Facilities</h2>
+          <h2 className="text-3xl font-bold mb-4">Посетите наши предприятия</h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto">
-            Interested in touring one of our tanneries? We offer facility tours for customers and partners to experience our manufacturing processes firsthand.
+            Хотите посетить один из наших кожевенных заводов? Мы предлагаем экскурсии для клиентов и партнёров, чтобы вы могли лично увидеть наши производственные процессы.
           </p>
           <Link href="/contact" className="px-8 py-3 bg-black text-white rounded-full text-lg inline-block hover:bg-gray-900 transition-colors">
-            Schedule a Tour
+            Запланировать тур
           </Link>
         </div>
       </section>

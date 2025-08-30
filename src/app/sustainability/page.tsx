@@ -19,9 +19,9 @@ export default function SustainabilityPage() {
 
         <div className="relative z-10 h-full flex items-center">
           <div className="container mx-auto px-8">
-            <h1 className="text-5xl font-bold mb-4">Sustainability</h1>
+            <h1 className="text-5xl font-bold mb-4">Устойчивое развитие</h1>
             <p className="text-xl max-w-2xl">
-              At GRANDTEX, sustainability is at the heart of everything we do. We're committed to creating a more sustainable future for our planet and people.
+              В GRANDTEX устойчивое развитие лежит в основе всего, что мы делаем. Мы стремимся создавать более устойчивое будущее для планеты и людей.
             </p>
           </div>
         </div>
@@ -30,15 +30,15 @@ export default function SustainabilityPage() {
       {/* Intro Section */}
       <section className="py-16 px-8">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">Our Commitment</h2>
+          <h2 className="text-3xl font-bold mb-8">Наша приверженность</h2>
 
           <div className="prose prose-lg max-w-none">
             <p>
-              Sustainability has always been at the heart of GRANDTEX's business. We took our commitment further, setting targets under four pillars: Operational Excellence, Circularity, Climate Action, and Social Impact.
+              Устойчивое развитие всегда было в основе бизнеса GRANDTEX. Мы укрепили нашу приверженность, установив цели по четырём направлениям: операционное совершенство, цикличность, борьба с изменением климата и социальное влияние.
             </p>
 
             <p>
-              Our approach to sustainability is integrated into every aspect of our business, from sourcing raw materials to manufacturing processes and community engagement. We believe that by operating responsibly, we can create value for our customers, employees, communities, and the environment.
+              Наш подход к устойчивости интегрирован во все аспекты бизнеса: от закупки сырья до производственных процессов и взаимодействия с сообществами. Мы считаем, что ответственная работа создаёт ценность для клиентов, сотрудников, обществ и окружающей среды.
             </p>
           </div>
         </div>
@@ -47,20 +47,20 @@ export default function SustainabilityPage() {
       {/* Pillars Section */}
       <section id="operational-excellence" className="py-16 px-8 bg-gray-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">Operational Excellence</h2>
+          <h2 className="text-3xl font-bold mb-8">Операционное совершенство</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
             <div>
               <div className="prose prose-lg">
                 <p>
-                  We're committed to operational excellence in our tanneries, focusing on resource efficiency, waste reduction, and pollution prevention. Our state-of-the-art facilities use advanced technologies to minimize environmental impact while maintaining the highest quality standards.
+                  Мы стремимся к операционному совершенству на наших кожевенных заводах, уделяя внимание эффективности использования ресурсов, сокращению отходов и предотвращению загрязнения. Наши современные предприятия используют передовые технологии, чтобы минимизировать воздействие на окружающую среду, сохраняя при этом высокие стандарты качества.
                 </p>
 
                 <ul>
-                  <li>Water recycling systems that reduce water consumption by up to 40%</li>
-                  <li>Energy-efficient equipment and processes</li>
-                  <li>Comprehensive waste management programs</li>
-                  <li>Strict adherence to environmental regulations</li>
+                  <li>Системы рециркуляции воды, сокращающие потребление до 40 %</li>
+                  <li>Энергоэффективное оборудование и процессы</li>
+                  <li>Комплексные программы управления отходами</li>
+                  <li>Строгое соблюдение экологических норм</li>
                 </ul>
               </div>
             </div>
@@ -79,7 +79,7 @@ export default function SustainabilityPage() {
 
       <section id="circularity" className="py-16 px-8">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">Circularity</h2>
+          <h2 className="text-3xl font-bold mb-8">Цикличность</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
             <div className="order-2 md:order-1 relative h-64 md:h-auto rounded-lg overflow-hidden">
@@ -94,14 +94,14 @@ export default function SustainabilityPage() {
             <div className="order-1 md:order-2">
               <div className="prose prose-lg">
                 <p>
-                  We're embracing circular economy principles by designing products with their full lifecycle in mind. This includes using by-products from other industries, developing biodegradable leathers, and creating upcycling programs.
+                  Мы принимаем принципы цикличной экономики, разрабатывая продукты с учётом полного жизненного цикла. Это включает использование побочных продуктов других отраслей, разработку биоразлагаемых кож и создание программ апсайклинга.
                 </p>
 
                 <ul>
-                  <li>Leather scraps repurposed into new products</li>
-                  <li>Collaboration with designers on circular design principles</li>
-                  <li>Research into biodegradable treatments and finishes</li>
-                  <li>Take-back programs for post-consumer leather goods</li>
+                  <li>Использование обрезков кожи для создания новых продуктов</li>
+                  <li>Сотрудничество с дизайнерами по принципам цикличного дизайна</li>
+                  <li>Исследования биоразлагаемых обработок и отделок</li>
+                  <li>Программы возврата кожаных изделий после использования</li>
                 </ul>
               </div>
             </div>
@@ -111,20 +111,20 @@ export default function SustainabilityPage() {
 
       <section id="climate-action" className="py-16 px-8 bg-gray-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">Climate Action</h2>
+          <h2 className="text-3xl font-bold mb-8">Борьба с изменением климата</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
             <div>
               <div className="prose prose-lg">
                 <p>
-                  We recognize the urgent need to address climate change and are taking action to reduce our carbon footprint. Our goal is to achieve carbon neutrality across our operations by 2030.
+                  Мы осознаём срочную необходимость борьбы с изменением климата и предпринимаем действия для сокращения нашего углеродного следа. Наша цель — достичь углеродной нейтральности во всех операциях к 2030 году.
                 </p>
 
                 <ul>
-                  <li>Renewable energy investments at our tanneries</li>
-                  <li>Energy efficiency improvements across our facilities</li>
-                  <li>Reduction of transportation emissions in our supply chain</li>
-                  <li>Carbon offset programs for unavoidable emissions</li>
+                  <li>Инвестиции в возобновляемую энергию на наших кожевенных заводах</li>
+                  <li>Повышение энергоэффективности на всех объектах</li>
+                  <li>Сокращение транспортных выбросов в цепочке поставок</li>
+                  <li>Программы компенсации углерода для неизбежных выбросов</li>
                 </ul>
               </div>
             </div>
@@ -143,7 +143,7 @@ export default function SustainabilityPage() {
 
       <section id="social-impact" className="py-16 px-8">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">Social Impact</h2>
+          <h2 className="text-3xl font-bold mb-8">Социальное влияние</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
             <div className="order-2 md:order-1 relative h-64 md:h-auto rounded-lg overflow-hidden">
@@ -158,14 +158,14 @@ export default function SustainabilityPage() {
             <div className="order-1 md:order-2">
               <div className="prose prose-lg">
                 <p>
-                  We're committed to making a positive impact on the communities where we operate. This includes fair labor practices, community development initiatives, and educational programs.
+                  Мы стремимся оказывать позитивное влияние на сообщества, в которых работаем. Это включает справедливые трудовые практики, инициативы по развитию сообществ и образовательные программы.
                 </p>
 
                 <ul>
-                  <li>Safe and healthy working conditions for all employees</li>
-                  <li>Fair wages and benefits</li>
-                  <li>Diversity and inclusion initiatives</li>
-                  <li>Community support programs in areas where we operate</li>
+                  <li>Безопасные и здоровые условия труда для всех сотрудников</li>
+                  <li>Справедливая заработная плата и социальные гарантии</li>
+                  <li>Инициативы по разнообразию и инклюзивности</li>
+                  <li>Программы поддержки сообществ в регионах присутствия</li>
                 </ul>
               </div>
             </div>
@@ -176,17 +176,17 @@ export default function SustainabilityPage() {
       {/* Reports Section */}
       <section className="py-16 px-8 bg-gray-100">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">Sustainability Reports</h2>
+          <h2 className="text-3xl font-bold mb-8">Отчёты по устойчивому развитию</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[2025, 2024, 2023].map((year) => (
               <div key={year} className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="text-xl font-bold mb-2">{year} Sustainability Report</h3>
+                <h3 className="text-xl font-bold mb-2">Отчёт по устойчивости {year}</h3>
                 <p className="text-gray-600 mb-4">
-                  Our annual report detailing our sustainability efforts, achievements, and goals.
+                  Наш ежегодный отчёт с подробностями о усилиях, достижениях и целях в области устойчивости.
                 </p>
                 <Link href="#" className="text-black font-medium hover:underline">
-                  Download PDF
+                  Скачать PDF
                 </Link>
               </div>
             ))}
@@ -197,12 +197,12 @@ export default function SustainabilityPage() {
       {/* CTA Section */}
       <section className="py-16 px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">Join Our Sustainability Journey</h2>
+          <h2 className="text-3xl font-bold mb-4">Присоединяйтесь к нашему пути устойчивого развития</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Learn more about our sustainable leather solutions and how we can help you meet your sustainability goals.
+            Узнайте больше о наших устойчивых кожаных решениях и о том, как мы можем помочь вам достигнуть целей в области устойчивости.
           </p>
           <Link href="/contact" className="px-8 py-3 bg-black text-white rounded-full text-lg inline-block">
-            Contact Us
+            Свяжитесь с нами
           </Link>
         </div>
       </section>

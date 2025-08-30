@@ -19,9 +19,9 @@ export default function ContactPage() {
 
         <div className="relative z-10 h-full flex items-center">
           <div className="container mx-auto px-8">
-            <h1 className="text-5xl font-bold mb-4">Contact Us</h1>
+            <h1 className="text-5xl font-bold mb-4">Свяжитесь с нами</h1>
             <p className="text-xl max-w-2xl">
-              Get in touch with our team to learn more about our products and services.
+              Свяжитесь с нашей командой, чтобы узнать больше о наших продуктах и услугах.
             </p>
           </div>
         </div>
@@ -31,13 +31,13 @@ export default function ContactPage() {
       <section className="py-16 px-8">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
-            <h2 className="text-3xl font-bold mb-8">Get In Touch</h2>
+            <h2 className="text-3xl font-bold mb-8">Связаться с нами</h2>
 
             <form className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-1">
-                    First Name*
+                    Имя*
                   </label>
                   <input
                     type="text"
@@ -49,7 +49,7 @@ export default function ContactPage() {
 
                 <div>
                   <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-1">
-                    Last Name*
+                    Фамилия*
                   </label>
                   <input
                     type="text"
@@ -62,7 +62,7 @@ export default function ContactPage() {
 
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                  Email Address*
+                  Электронная почта*
                 </label>
                 <input
                   type="email"
@@ -74,7 +74,7 @@ export default function ContactPage() {
 
               <div>
                 <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-1">
-                  Company
+                  Компания
                 </label>
                 <input
                   type="text"
@@ -85,7 +85,7 @@ export default function ContactPage() {
 
               <div>
                 <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
-                  Subject*
+                  Тема*
                 </label>
                 <input
                   type="text"
@@ -97,7 +97,7 @@ export default function ContactPage() {
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                  Message*
+                  Сообщение*
                 </label>
                 <textarea
                   id="message"
@@ -109,18 +109,18 @@ export default function ContactPage() {
 
               <div>
                 <button type="submit" className="px-6 py-3 bg-black text-white rounded-md">
-                  Submit
+                  Отправить
                 </button>
               </div>
             </form>
           </div>
 
           <div>
-            <h2 className="text-3xl font-bold mb-8">Our Locations</h2>
+            <h2 className="text-3xl font-bold mb-8">Наши адреса</h2>
 
             <div className="space-y-10">
               <div>
-                <h3 className="text-xl font-bold mb-2">China</h3>
+                <h3 className="text-xl font-bold mb-2">Китай</h3>
                 <p className="text-gray-600 mb-4">
                   GRANDTEX Leather Co., Ltd.<br />
                   123 Industrial Avenue<br />
@@ -132,7 +132,7 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <h3 className="text-xl font-bold mb-2">Vietnam</h3>
+                <h3 className="text-xl font-bold mb-2">Вьетнам</h3>
                 <p className="text-gray-600 mb-4">
                   GRANDTEX Vietnam Co., Ltd.<br />
                   456 Manufacturing Boulevard<br />
@@ -144,7 +144,7 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <h3 className="text-xl font-bold mb-2">USA</h3>
+                <h3 className="text-xl font-bold mb-2">США</h3>
                 <p className="text-gray-600 mb-4">
                   GRANDTEX America Inc.<br />
                   789 Corporate Plaza<br />
@@ -162,13 +162,13 @@ export default function ContactPage() {
       {/* Inquiry Types */}
       <section className="py-16 px-8 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">How Can We Help You?</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center">Чем мы можем вам помочь?</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-lg shadow-sm">
-              <h3 className="text-xl font-bold mb-4">Sales Inquiries</h3>
+              <h3 className="text-xl font-bold mb-4">Вопросы по продажам</h3>
               <p className="text-gray-600 mb-4">
-                Interested in our leather products? Our sales team is ready to assist you with product information, samples, and pricing.
+                Интересуетесь нашей кожаной продукцией? Наша команда продаж готова помочь с информацией о продуктах, образцами и ценами.
               </p>
               <Link href="mailto:sales@grandtex.com" className="text-black font-medium hover:underline">
                 sales@grandtex.com
@@ -176,9 +176,9 @@ export default function ContactPage() {
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-sm">
-              <h3 className="text-xl font-bold mb-4">Technical Support</h3>
+              <h3 className="text-xl font-bold mb-4">Техническая поддержка</h3>
               <p className="text-gray-600 mb-4">
-                Need technical assistance with our products? Our experts are available to answer your questions and provide guidance.
+                Нужна техническая помощь по нашим продуктам? Наши специалисты готовы ответить на ваши вопросы и предоставить рекомендации.
               </p>
               <Link href="mailto:support@grandtex.com" className="text-black font-medium hover:underline">
                 support@grandtex.com
@@ -186,9 +186,9 @@ export default function ContactPage() {
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-sm">
-              <h3 className="text-xl font-bold mb-4">Sustainability</h3>
+              <h3 className="text-xl font-bold mb-4">Устойчивое развитие</h3>
               <p className="text-gray-600 mb-4">
-                Want to learn more about our sustainability initiatives? Contact our sustainability team for information.
+                Хотите узнать больше о наших инициативах в области устойчивости? Свяжитесь с нашей командой по устойчивому развитию.
               </p>
               <Link href="mailto:sustainability@grandtex.com" className="text-black font-medium hover:underline">
                 sustainability@grandtex.com
