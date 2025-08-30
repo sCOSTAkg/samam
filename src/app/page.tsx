@@ -88,14 +88,14 @@ export default function Home() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 px-8 pt-40 h-full flex flex-col justify-between pb-32">
+        <div className="relative z-10 px-4 sm:px-8 pt-32 sm:pt-40 h-full flex flex-col justify-between pb-24 sm:pb-32">
           <div className="animate-fade-in">
-            <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold mb-2 animate-reveal">
+            <h1 className="text-4xl sm:text-6xl lg:text-8xl font-bold mb-2 animate-reveal">
               Производство одежды <br />
               <span className="inline-block mt-2">полного цикла</span>
             </h1>
-            <div className="mt-8 max-w-xl">
-              <p className="text-xl sm:text-2xl font-medium animate-reveal-delay">
+            <div className="mt-6 sm:mt-8 max-w-xl">
+              <p className="text-lg sm:text-2xl font-medium animate-reveal-delay">
                 Швейная фабрика в Бишкеке: от идеи и лекал до готовой продукции.
               </p>
             </div>
@@ -106,7 +106,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
               <Link
                 href="/services"
-                className="relative h-40 rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-[1.02] group"
+                className="relative h-32 sm:h-40 rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-[1.02] group animate-fade-in-scroll"
               >
                 <Image
                   src="https://ext.same-assets.com/1118492138/1723594169.jpeg"
@@ -124,7 +124,7 @@ export default function Home() {
               </Link>
               <Link
                 href="/production"
-                className="relative h-40 rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-[1.02] group"
+                className="relative h-32 sm:h-40 rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-[1.02] group animate-fade-in-scroll"
               >
                 <Image
                   src="https://ext.same-assets.com/1118492138/3036160331.jpeg"
@@ -141,10 +141,10 @@ export default function Home() {
                 </div>
               </Link>
             </div>
-            <div className="mt-8 flex justify-center md:justify-start">
+            <div className="mt-6 sm:mt-8 flex justify-center md:justify-start">
               <Link
                 href="/portfolio"
-                className="px-8 py-3 border border-white text-white rounded-full inline-block hover:bg-white hover:text-black transition-colors duration-300"
+                className="px-6 sm:px-8 py-3 border border-white text-white rounded-full inline-block hover:bg-white hover:text-black transition-colors duration-300 animate-fade-in-scroll"
               >
                 Посмотреть портфолио
               </Link>
@@ -161,7 +161,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="w-full py-24 px-8 bg-white opacity-0 animate-fade-in-scroll">
+      <section className="w-full py-24 px-4 sm:px-8 bg-white opacity-0 animate-fade-in-scroll">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 opacity-0 animate-fade-in-scroll">
             <h2 className="text-4xl font-bold mb-4">Наши возможности</h2>
@@ -209,7 +209,7 @@ export default function Home() {
       </section>
 
       {/* Sustainability Section */}
-      <section className="w-full py-24 px-8 bg-gray-50 relative overflow-hidden opacity-0 animate-fade-in-scroll">
+      <section className="w-full py-24 px-4 sm:px-8 bg-gray-50 relative overflow-hidden opacity-0 animate-fade-in-scroll">
         <div className="absolute inset-0 z-0 opacity-10">
           <Image
             src="https://ext.same-assets.com/1118492138/180971912.jpeg"
@@ -269,7 +269,7 @@ export default function Home() {
       </section>
 
       {/* Brands Section */}
-      <section className="w-full py-24 px-8 bg-white opacity-0 animate-fade-in-scroll">
+      <section className="w-full py-24 px-4 sm:px-8 bg-white opacity-0 animate-fade-in-scroll">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 opacity-0 animate-fade-in-scroll">
             <h2 className="text-4xl font-bold mb-4">Нам доверяют мировые бренды</h2>
