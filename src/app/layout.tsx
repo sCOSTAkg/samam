@@ -3,7 +3,6 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import ClientBody from "./ClientBody";
 import Script from "next/script";
-import Animations from './animations';
 
 
 export const metadata: Metadata = {
@@ -76,7 +75,6 @@ export default function RootLayout({
       </head>
       <body suppressHydrationWarning className="antialiased">
         <ClientBody>
-          <Animations />
           {children}
         </ClientBody>
       </body>
