@@ -34,24 +34,24 @@ export default function Header({ transparent = false }) {
     subLinks?: { title: string; href: string }[];
   }[] = [
     {
-      title: "Услуги",
-      href: "/services",
+      title: "Коллекции",
+      href: "/collections",
     },
     {
-      title: "Производство",
-      href: "/production",
+      title: "Кожи",
+      href: "/leathers",
+    },
+    {
+      title: "Дубильни",
+      href: "/tanneries",
+    },
+    {
+      title: "Устойчивость",
+      href: "/sustainability",
     },
     {
       title: "Почему GRANDTEX?",
       href: "/why-grandtex",
-    },
-    {
-      title: "Портфолио",
-      href: "/portfolio",
-    },
-    {
-      title: "Калькулятор стоимости",
-      href: "/calculator",
     },
     {
       title: "Контакты",

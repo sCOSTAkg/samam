@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -7,52 +7,101 @@ export default function Footer() {
         <div>
           <h3 className="font-medium mb-4">Навигация</h3>
           <ul className="space-y-2">
-            <li><Link href="/services" className="text-gray-600 hover:text-black">Услуги</Link></li>
-            <li><Link href="/production" className="text-gray-600 hover:text-black">Производство</Link></li>
-            <li><Link href="/portfolio" className="text-gray-600 hover:text-black">Портфолио</Link></li>
-            <li><Link href="/calculator" className="text-gray-600 hover:text-black">Калькулятор стоимости</Link></li>
-            <li><Link href="/contact" className="text-gray-600 hover:text-black">Контакты</Link></li>
-          </ul>
-        </div>
-
-        <div>
-          <h3 className="font-medium mb-4">Услуги</h3>
-          <ul className="space-y-2">
-            <li><Link href="/services/patterns" className="text-gray-600 hover:text-black">Разработка лекал</Link></li>
-            <li><Link href="/services/sewing" className="text-gray-600 hover:text-black">Пошив изделий</Link></li>
-            <li><Link href="/services/quality" className="text-gray-600 hover:text-black">Контроль качества</Link></li>
+            <li>
+              <Link
+                href="/collections"
+                className="text-gray-600 hover:text-black"
+              >
+                Коллекции
+              </Link>
+            </li>
+            <li>
+              <Link href="/leathers" className="text-gray-600 hover:text-black">
+                Кожи
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/tanneries"
+                className="text-gray-600 hover:text-black"
+              >
+                Дубильни
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/sustainability"
+                className="text-gray-600 hover:text-black"
+              >
+                Устойчивость
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact" className="text-gray-600 hover:text-black">
+                Контакты
+              </Link>
+            </li>
           </ul>
         </div>
 
         <div>
           <h3 className="font-medium mb-4">Информация</h3>
           <ul className="space-y-2">
-            <li><Link href="/why-grandtex" className="text-gray-600 hover:text-black">Почему GRANDTEX?</Link></li>
-            <li><Link href="/about" className="text-gray-600 hover:text-black">О компании</Link></li>
-            <li><Link href="/resources" className="text-gray-600 hover:text-black">Ресурсы</Link></li>
+            <li>
+              <Link
+                href="/about-grandtex"
+                className="text-gray-600 hover:text-black"
+              >
+                О GRANDTEX
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/why-grandtex"
+                className="text-gray-600 hover:text-black"
+              >
+                Почему GRANDTEX?
+              </Link>
+            </li>
           </ul>
+        </div>
 
-          <div className="mt-8">
-            <p className="text-sm text-gray-600 mb-4">Подпишитесь на нашу рассылку, чтобы получать последние новости о производстве и услугах.</p>
-            <form className="flex flex-col space-y-2">
-              <input type="email" placeholder="Электронная почта" className="px-4 py-2 border border-gray-300 rounded-md" />
-              <button type="submit" className="px-4 py-2 bg-black text-white rounded-md">Подписаться</button>
-            </form>
-          </div>
+        <div>
+          <h3 className="font-medium mb-4">Подписка</h3>
+          <p className="text-sm text-gray-600 mb-4">
+            Подпишитесь на нашу рассылку, чтобы получать последние новости о
+            производстве и услугах.
+          </p>
+          <form className="flex flex-col space-y-2">
+            <input
+              type="email"
+              placeholder="Электронная почта"
+              className="px-4 py-2 border border-gray-300 rounded-md"
+            />
+            <button
+              type="submit"
+              className="px-4 py-2 bg-black text-white rounded-md"
+            >
+              Подписаться
+            </button>
+          </form>
         </div>
       </div>
 
       <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-gray-300 flex flex-col md:flex-row justify-between items-center">
         <p className="text-gray-600 text-sm">© 2025 GRANDTEX</p>
         <div className="flex space-x-6 mt-4 md:mt-0">
-          <Link href="https://www.linkedin.com" className="text-gray-600 hover:text-black">
+          <Link
+            href="https://www.linkedin.com"
+            className="text-gray-600 hover:text-black"
+          >
             LinkedIn
           </Link>
-          <Link href="https://www.instagram.com" className="text-gray-600 hover:text-black">
+          <Link
+            href="https://www.instagram.com"
+            className="text-gray-600 hover:text-black"
+          >
             Instagram
-          </Link>
-          <Link href="/privacy-policy" className="text-gray-600 hover:text-black">
-            Политика конфиденциальности
           </Link>
         </div>
       </div>
