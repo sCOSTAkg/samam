@@ -3,41 +3,29 @@ import Link from 'next/link';
 import MainLayout from '@/components/layout/MainLayout';
 
 export default function Home() {
-  const latestProducts = [
+  const services = [
     {
-      id: 'opulent',
-      name: 'Opulent',
-      collection: 'Весна-Лето 27',
-      type: 'Грейн',
-      finish: 'Натуральная барабанная отделка',
-      treatment: 'Полуанилиновая',
+      id: 'patterns',
+      name: 'Разработка лекал',
+      description: 'Создаем точные лекала для любой модели одежды.',
       image: 'https://ext.same-assets.com/1118492138/331861169.jpeg',
     },
     {
-      id: 'papyrus',
-      name: 'Papyrus',
-      collection: 'Весна-Лето 27',
-      type: 'Грейн',
-      finish: 'Натуральная барабанная отделка',
-      treatment: 'Специальная',
+      id: 'sewing',
+      name: 'Пошив изделий',
+      description: 'Производим более 50 000 изделий в месяц на современном оборудовании.',
       image: 'https://ext.same-assets.com/1118492138/3988412587.jpeg',
     },
     {
-      id: 'boho',
-      name: 'Boho',
-      collection: 'Весна-Лето 27',
-      type: 'Грейн',
-      finish: 'Тиснёная',
-      treatment: 'Анилиновая',
+      id: 'quality',
+      name: 'Контроль качества',
+      description: 'Многоступенчатая проверка каждого изделия перед отправкой.',
       image: 'https://ext.same-assets.com/1118492138/3513175735.jpeg',
     },
     {
-      id: 'sterling',
-      name: 'Sterling',
-      collection: 'Весна-Лето 27',
-      type: 'Грейн',
-      finish: 'Гладкая',
-      treatment: 'Анилиновая',
+      id: 'logistics',
+      name: 'Упаковка и логистика',
+      description: 'Маркировка, упаковка и доставка готовой продукции по всему миру.',
       image: 'https://ext.same-assets.com/1118492138/3442149313.jpeg',
     },
   ];
@@ -67,20 +55,20 @@ export default function Home() {
 
   const sustainabilityPillars = [
     {
-      title: "Операционное совершенство",
-      description: "Оптимизация процессов для сокращения отходов и потребления ресурсов."
+      title: "Энергоэффективность",
+      description: "Использование оборудования, снижающего потребление энергии."
     },
     {
-      title: "Цикличность",
-      description: "Внедрение принципов круговой экономики на протяжении жизненного цикла продукта."
+      title: "Экономия материалов",
+      description: "Оптимизация раскроя и переработка отходов ткани."
     },
     {
-      title: "Борьба с изменением климата",
-      description: "Сокращение нашего углеродного следа и инвестиции в возобновляемую энергию."
+      title: "Чистое производство",
+      description: "Минимизация выбросов и использование безопасных красителей."
     },
     {
-      title: "Социальное влияние",
-      description: "Создание позитивных изменений в сообществах, где мы работаем."
+      title: "Забота о команде",
+      description: "Создание безопасных условий труда и поддержка сотрудников."
     }
   ];
 
@@ -91,7 +79,7 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <Image
             src="https://ext.same-assets.com/1118492138/3414069527.jpeg"
-            alt="Фон из текстуры кожи"
+            alt="Фон швейного производства"
             fill
             style={{ objectFit: 'cover', opacity: 0.7 }}
             priority
@@ -102,14 +90,13 @@ export default function Home() {
         {/* Hero Content */}
         <div className="relative z-10 px-8 pt-40 h-full flex flex-col justify-between pb-32">
           <div className="animate-fade-in">
-            <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold mb-2 animate-reveal">
-              Двигайтесь <br />
-              <span className="inline-block mt-2">вперёд.</span>
+            <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold mb-2 animate-reveal font-heading">
+              Производство одежды <br />
+              <span className="inline-block mt-2">полного цикла</span>
             </h1>
             <div className="mt-8 max-w-xl">
               <p className="text-xl sm:text-2xl font-medium animate-reveal-delay">
-                Ваш партнёр по кожевенному производству,<br />
-                ориентированный на будущее.
+                Швейная фабрика в Бишкеке: от идеи и лекал до готовой продукции.
               </p>
             </div>
           </div>
@@ -118,48 +105,48 @@ export default function Home() {
           <div className="w-full max-w-6xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
               <Link
-                href="/about-grandtex"
+                href="/services"
                 className="relative h-40 rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-[1.02] group"
               >
                 <Image
                   src="https://ext.same-assets.com/1118492138/1723594169.jpeg"
-                  alt="О GRANDTEX"
+                  alt="Услуги GRANDTEX"
                   fill
                   style={{ objectFit: 'cover' }}
                   className="transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
                   <div>
-                    <span className="text-white font-medium text-xl mb-1 block">О GRANDTEX</span>
-                    <p className="text-gray-300 text-sm">Узнайте нашу историю, ценности и видение</p>
+                    <span className="text-white font-medium text-xl mb-1 block">Услуги</span>
+                    <p className="text-gray-300 text-sm">Полный спектр швейных услуг</p>
                   </div>
                 </div>
               </Link>
               <Link
-                href="/tanneries"
+                href="/production"
                 className="relative h-40 rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-[1.02] group"
               >
                 <Image
                   src="https://ext.same-assets.com/1118492138/3036160331.jpeg"
-                  alt="Наши кожевенные заводы"
+                  alt="Производство GRANDTEX"
                   fill
                   style={{ objectFit: 'cover' }}
                   className="transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
                   <div>
-                    <span className="text-white font-medium text-xl mb-1 block">Наши кожевенные заводы</span>
-                    <p className="text-gray-300 text-sm">Ознакомьтесь с нашими современными производствами</p>
+                    <span className="text-white font-medium text-xl mb-1 block">Производство</span>
+                    <p className="text-gray-300 text-sm">Оборудование и мощности фабрики</p>
                   </div>
                 </div>
               </Link>
             </div>
             <div className="mt-8 flex justify-center md:justify-start">
               <Link
-                href="/leathers"
+                href="/portfolio"
                 className="px-8 py-3 border border-white text-white rounded-full inline-block hover:bg-white hover:text-black transition-colors duration-300"
               >
-                Исследовать наши кожи
+                Посмотреть портфолио
               </Link>
             </div>
           </div>
@@ -173,63 +160,49 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Leathers Section */}
+      {/* Services Section */}
       <section className="w-full py-24 px-8 bg-white opacity-0 animate-fade-in-scroll">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 opacity-0 animate-fade-in-scroll">
-            <h2 className="text-4xl font-bold mb-4">Последняя коллекция</h2>
+            <h2 className="text-4xl font-bold mb-4 font-heading">Наши возможности</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Ознакомьтесь с нашей коллекцией Весна-Лето 27, включающей премиальные кожи, созданные для универсальности и производительности.
+              Узнайте о ключевых услугах и этапах производства GRANDTEX.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {latestProducts.map((product, index) => (
+            {services.map((service, index) => (
               <Link
-                key={product.id}
-                href={`/leathers/${product.id}`}
+                key={service.id}
+                href={`/services/${service.id}`}
                 className="group bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 opacity-0 animate-fade-in-scroll"
                 style={{ animationDelay: `${index * 150}ms` }}
               >
                 <div className="relative aspect-square overflow-hidden">
                   <Image
-                    src={product.image}
-                    alt={product.name}
+                    src={service.image}
+                    alt={service.name}
                     fill
                     style={{ objectFit: 'cover' }}
                     className="transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold group-hover:text-accent transition-colors">{product.name}</h3>
-                  <p className="text-sm text-gray-500 mt-1">{product.collection}</p>
-                  <div className="mt-4 space-y-1">
-                    <div className="flex justify-between">
-                      <span className="text-sm text-gray-500">Тип</span>
-                      <span className="text-sm">{product.type}</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-sm text-gray-500">Отделка</span>
-                      <span className="text-sm">{product.finish}</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-sm text-gray-500">Обработка</span>
-                      <span className="text-sm">{product.treatment}</span>
-                    </div>
-                  </div>
+                  <h3 className="text-xl font-bold group-hover:text-accent transition-colors font-heading">{service.name}</h3>
+                  <p className="mt-2 text-sm text-gray-500">{service.description}</p>
                 </div>
               </Link>
             ))}
           </div>
           <div className="mt-16 text-center opacity-0 animate-fade-in-scroll" style={{ animationDelay: '600ms' }}>
             <p className="mb-8 text-gray-700 max-w-3xl mx-auto">
-              От спортзала до поездки на работу SS27 отражает глубину и масштаб того, что GRANDTEX умеет делать лучше всего — создавать универсальные кожи, которые подстраиваются под ваши потребности. В рамках ребрендинга этот сезон ознаменует обновлённую приверженность обслуживать бренды любого размера с точностью, целью и партнёрством.
+              Мы предоставляем полный цикл производства одежды. GRANDTEX выпускает более 50 000 изделий в месяц и гарантирует высокое качество на каждом этапе.
             </p>
             <Link
-              href="/collections/spring-summer-2027"
+              href="/services"
               className="px-8 py-3 bg-black text-white rounded-full inline-block hover:bg-gray-900 transition-colors"
             >
-              Посмотреть коллекцию
+              Узнать больше об услугах
             </Link>
           </div>
         </div>
@@ -249,9 +222,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             <div className="opacity-0 animate-fade-in-scroll">
-              <h2 className="text-4xl font-bold mb-6">Устойчивое развитие</h2>
+              <h2 className="text-4xl font-bold mb-6 font-heading">Ответственное производство</h2>
               <p className="text-lg text-gray-700 mb-8">
-                Устойчивое развитие всегда было в основе бизнеса GRANDTEX. Мы продвинули нашу приверженность дальше, установив цели по четырём направлениям: операционное совершенство, цикличность, борьба с изменением климата и социальное влияние.
+                GRANDTEX стремится к экологичному и социально ответственному производству одежды. Мы концентрируем усилия на четырёх направлениях: энергоэффективность, экономия материалов, чистое производство и забота о команде.
               </p>
 
               <div className="grid grid-cols-2 gap-4 mb-8">
@@ -261,7 +234,7 @@ export default function Home() {
                     className="bg-white p-6 rounded-lg shadow-sm transform transition-transform duration-300 hover:scale-[1.03] opacity-0 animate-fade-in-scroll"
                     style={{ animationDelay: `${index * 150 + 300}ms` }}
                   >
-                    <h3 className="text-lg font-bold mb-2">{pillar.title}</h3>
+                    <h3 className="text-lg font-bold mb-2 font-heading">{pillar.title}</h3>
                     <p className="text-gray-600">{pillar.description}</p>
                   </div>
                 ))}
@@ -279,15 +252,15 @@ export default function Home() {
               <div className="aspect-[4/5] rounded-lg overflow-hidden">
                 <Image
                   src="https://ext.same-assets.com/1118492138/180971912.jpeg"
-                  alt="Устойчивое развитие"
+                  alt="Ответственное производство"
                   fill
                   style={{ objectFit: 'cover' }}
                 />
               </div>
               <div className="absolute -bottom-8 -left-8 w-2/3 bg-white p-6 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-[1.02]">
-                <h3 className="text-xl font-bold mb-2">Наша приверженность</h3>
+                <h3 className="text-xl font-bold mb-2 font-heading">Наша приверженность</h3>
                 <p className="text-gray-700">
-                  К 2030 году мы стремимся сократить потребление воды на 50 %, достичь углеродной нейтральности и обеспечить переработку или повторное использование 100 % отходов кожи.
+                  К 2030 году мы стремимся сократить потребление воды на 50 %, достичь углеродной нейтральности и обеспечить переработку или повторное использование 100 % отходов ткани.
                 </p>
               </div>
             </div>
@@ -299,9 +272,9 @@ export default function Home() {
       <section className="w-full py-24 px-8 bg-white opacity-0 animate-fade-in-scroll">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 opacity-0 animate-fade-in-scroll">
-            <h2 className="text-4xl font-bold mb-4">Нам доверяют мировые бренды</h2>
+            <h2 className="text-4xl font-bold mb-4 font-heading">Нам доверяют мировые бренды</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Мы сотрудничаем с брендами любого масштаба, сочетая мастерство мирового уровня с персонализированным сервисом для создания исключительных кожаных продуктов.
+              Мы сотрудничаем с брендами любого масштаба, обеспечивая качественный пошив и соблюдение сроков.
             </p>
           </div>
 
@@ -327,9 +300,9 @@ export default function Home() {
           </div>
 
           <div className="mt-20 bg-gray-900 rounded-2xl p-12 text-white text-center opacity-0 animate-fade-in-scroll" style={{ animationDelay: '800ms' }}>
-            <h3 className="text-3xl font-bold mb-6">Готовы начать?</h3>
+            <h3 className="text-3xl font-bold mb-6 font-heading">Готовы начать?</h3>
             <p className="text-xl mb-8 max-w-2xl mx-auto">
-              Ощутите преимущество GRANDTEX и узнайте, как наши премиальные кожи могут повысить уровень ваших продуктов.
+              Ощутите преимущества GRANDTEX и узнайте, как наша швейная фабрика может поддержать ваш бренд.
             </p>
             <Link
               href="/contact"

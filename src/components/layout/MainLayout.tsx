@@ -1,7 +1,6 @@
 import Header from './Header';
 import Footer from './Footer';
 import CookieConsent from './CookieConsent';
-import Animations from '@/app/animations';
 
 interface MainLayoutProps {
   children: React.ReactNode;
@@ -20,7 +19,6 @@ export default function MainLayout({
       </main>
       <Footer />
       <CookieConsent />
-      <Animations />
     </div>
   );
 }

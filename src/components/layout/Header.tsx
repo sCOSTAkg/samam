@@ -3,13 +3,12 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
 import { usePathname } from 'next/navigation';
 
 export default function Header({ transparent = false }) {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const pathname = usePathname();
+    const [isScrolled, setIsScrolled] = useState(false);
+    const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,80 +27,35 @@ export default function Header({ transparent = false }) {
 
   const textClasses = transparent && !isScrolled ? 'text-white' : 'text-black';
 
-  const navLinks = [
+  const navLinks: {
+    title: string;
+    href: string;
+    image?: string;
+    subLinks?: { title: string; href: string }[];
+  }[] = [
     {
-      title: 'Кожи',
-      href: '/leathers',
-      image: 'https://ext.same-assets.com/1118492138/3442149313.jpeg',
-      subLinks: [
-        {
-          title: 'Коллекция Весна-Лето 27',
-          href: '/collections/spring-summer-2027'
-        },
-        {
-          title: 'Коллекция Осень-Зима 26',
-          href: '/collections/fw26'
-        }
-      ]
+      title: 'Услуги',
+      href: '/services',
     },
     {
-      title: 'Тиснение и перфорация',
-      href: '/emboss-perforation',
-      image: 'https://ext.same-assets.com/1118492138/3513175735.jpeg',
+      title: 'Производство',
+      href: '/production',
     },
     {
       title: 'Почему GRANDTEX?',
       href: '/why-grandtex',
-      image: 'https://ext.same-assets.com/1118492138/2560085916.jpeg',
-      subLinks: [
-        {
-          title: 'О GRANDTEX',
-          href: '/about-grandtex'
-        },
-        {
-          title: 'Кожевенные заводы',
-          href: '/tanneries'
-        }
-      ]
     },
     {
-      title: 'Устойчивое развитие',
-      href: '/sustainability',
-      image: 'https://ext.same-assets.com/1118492138/180971912.jpeg',
-      subLinks: [
-        {
-          title: 'Операционное совершенство',
-          href: '/sustainability#operational-excellence'
-        },
-        {
-          title: 'Цикличность',
-          href: '/sustainability#circularity'
-        },
-        {
-          title: 'Борьба с изменением климата',
-          href: '/sustainability#climate-action'
-        },
-        {
-          title: 'Социальное влияние',
-          href: '/sustainability#social-impact'
-        }
-      ]
+      title: 'Портфолио',
+      href: '/portfolio',
     },
     {
-      title: 'Достижения',
-      href: '/highlights'
+      title: 'Калькулятор стоимости',
+      href: '/calculator',
     },
     {
-      title: 'Образование',
-      href: '/education'
-    },
-    {
-      title: 'Адреса',
-      href: '/contact'
-    },
-    {
-      title: 'Ресурсы',
-      href: '/resources'
+      title: 'Контакты',
+      href: '/contact',
     }
   ];
 
@@ -110,19 +64,18 @@ export default function Header({ transparent = false }) {
       <div className="flex justify-between items-center w-full px-8 py-6">
         <Link
           href="/"
-          className={`text-3xl font-bold transition-colors duration-300 ${textClasses}`}
+          className={`text-3xl font-bold transition-colors duration-300 font-heading ${textClasses}`}
         >
           GRANDTEX
         </Link>
 
         <Sheet>
           <SheetTrigger asChild>
-            <button
-              className={`flex items-center space-x-2 transition-colors duration-300 ${textClasses} hover:opacity-75`}
-              onClick={() => setIsMenuOpen(true)}
-            >
-              <span>Меню</span>
-            </button>
+              <button
+                className={`flex items-center space-x-2 transition-colors duration-300 ${textClasses} hover:opacity-75`}
+              >
+                <span>Меню</span>
+              </button>
           </SheetTrigger>
           <SheetContent
             side="right"
@@ -130,21 +83,22 @@ export default function Header({ transparent = false }) {
           >
             <div className="h-full flex flex-col">
               <div className="flex justify-between items-center px-8 py-6 border-b">
-                <Link href="/" className="text-3xl font-bold">
-                  grandtex
+                <Link href="/" className="text-3xl font-bold font-heading">
+                  GRANDTEX
                 </Link>
-                <button
-                  className="text-gray-500 hover:text-black transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Закрыть
-                </button>
+                <SheetClose asChild>
+                  <button
+                    className="text-gray-500 hover:text-black transition-colors"
+                  >
+                    Закрыть
+                  </button>
+                </SheetClose>
               </div>
 
               <div className="flex-1 overflow-auto px-8 py-10">
                 <nav className="space-y-12">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    {navLinks.slice(0, 4).map((link, index) => (
+                    {navLinks.slice(0, 4).map((link) => (
                       <div key={link.title} className="space-y-4">
                         <Link
                           href={link.href}
