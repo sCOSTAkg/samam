@@ -3,16 +3,27 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import ClientBody from "./ClientBody";
 import Script from "next/script";
-import Animations from './animations';
-
+import Animations from "./animations";
 
 export const metadata: Metadata = {
   title: {
     template: "%s | GRANDTEX",
-    default: "GRANDTEX - Производство одежды полного цикла в Бишкеке | Швейная фабрика",
+    default:
+      "GRANDTEX - Производство одежды полного цикла в Бишкеке | Швейная фабрика",
   },
-  description: "Швейная фабрика GRANDTEX в Бишкеке - производство одежды полного цикла. От лекал до готовой продукции. 50,000+ изделий/месяц. 15+ лет опыта. Контроль качества.",
-  keywords: ["швейная фабрика", "производство одежды", "пошив одежды", "лекала", "Бишкек", "Кыргызстан", "текстиль", "униформа", "качественный пошив"],
+  description:
+    "Швейная фабрика GRANDTEX в Бишкеке - производство одежды полного цикла. От лекал до готовой продукции. 50,000+ изделий/месяц. 15+ лет опыта. Контроль качества.",
+  keywords: [
+    "швейная фабрика",
+    "производство одежды",
+    "пошив одежды",
+    "лекала",
+    "Бишкек",
+    "Кыргызстан",
+    "текстиль",
+    "униформа",
+    "качественный пошив",
+  ],
   authors: [{ name: "GRANDTEX" }],
   creator: "GRANDTEX",
   publisher: "GRANDTEX",
@@ -24,7 +35,8 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://grandtex.ru"),
   openGraph: {
     title: "GRANDTEX - Производство одежды полного цикла",
-    description: "Швейная фабрика GRANDTEX - производство качественной одежды с гарантией. Полный цикл от лекал до готовой продукции.",
+    description:
+      "Швейная фабрика GRANDTEX - производство качественной одежды с гарантией. Полный цикл от лекал до готовой продукции.",
     url: "https://grandtex.ru/",
     siteName: "GRANDTEX",
     locale: "ru_RU",
@@ -41,13 +53,14 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "GRANDTEX - Производство одежды полного цикла",
-    description: "Швейная фабрика GRANDTEX - производство качественной одежды с гарантией. Полный цикл от лекал до готовой продукции.",
+    description:
+      "Швейная фабрика GRANDTEX - производство качественной одежды с гарантией. Полный цикл от лекал до готовой продукции.",
     images: ["https://ext.same-assets.com/1118492138/3414069527.jpeg"],
   },
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon.ico',
-    apple: '/apple-icon.png',
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-icon.png",
   },
 };
 
@@ -67,11 +80,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-      <html lang="ru" className="scroll-smooth">
+    <html lang="ru" className="scroll-smooth">
       <head>
+        {/* TODO: Bundle same-runtime via npm to avoid runtime CDN dependence */}
         <Script
           crossOrigin="anonymous"
-          src="//unpkg.com/same-runtime/dist/index.global.js"
+          src="https://unpkg.com/same-runtime@0.0.1/dist/index.global.js"
+          defer
         />
       </head>
       <body suppressHydrationWarning className="antialiased">
