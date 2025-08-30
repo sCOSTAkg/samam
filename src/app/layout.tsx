@@ -33,6 +33,9 @@ export const metadata: Metadata = {
     telephone: false,
   },
   metadataBase: new URL("https://grandtex.ru"),
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "GRANDTEX - Производство одежды полного цикла",
     description:
