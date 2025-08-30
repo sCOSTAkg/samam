@@ -1,18 +1,30 @@
 import type { Metadata, Viewport } from "next";
-// Using system fonts during build to avoid network font fetching issues
+import { Montserrat, Open_Sans } from "next/font/google";
 import "./globals.css";
 import ClientBody from "./ClientBody";
 import Script from "next/script";
 import Animations from './animations';
 
+const montserrat = Montserrat({
+  subsets: ["latin", "cyrillic"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-montserrat",
+});
+
+const openSans = Open_Sans({
+  subsets: ["latin", "cyrillic"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-open-sans",
+});
+
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | GRANDTEX Кожа",
-    default: "GRANDTEX | Ваш партнёр по кожевенному производству, ориентированный на будущее",
+    template: "%s | GRANDTEX",
+    default: "GRANDTEX - Производство одежды полного цикла в Бишкеке | Швейная фабрика",
   },
-  description: "GRANDTEX — ваш партнёр по высококачественным кожаным изделиям, уделяющий особое внимание устойчивости и инновационным решениям для мировых брендов.",
-  keywords: ["кожа", "кожевенный завод", "устойчивая кожа", "кожа для обуви", "премиальная кожа", "производство кожи"],
+  description: "Швейная фабрика GRANDTEX в Бишкеке - производство одежды полного цикла. От лекал до готовой продукции. 50,000+ изделий/месяц. 15+ лет опыта. Контроль качества.",
+  keywords: ["швейная фабрика", "производство одежды", "пошив одежды", "лекала", "Бишкек", "Кыргызстан", "текстиль", "униформа", "качественный пошив"],
   authors: [{ name: "GRANDTEX" }],
   creator: "GRANDTEX",
   publisher: "GRANDTEX",
@@ -21,12 +33,12 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://grandtex-leather.netlify.app"),
+  metadataBase: new URL("https://grandtex.ru"),
   openGraph: {
-    title: "GRANDTEX | Ваш партнёр по кожевенному производству, ориентированный на будущее",
-    description: "GRANDTEX — ваш партнёр по высококачественным кожаным изделиям, уделяющий особое внимание устойчивости и инновационным решениям для мировых брендов.",
-    url: "https://grandtex-leather.netlify.app",
-    siteName: "GRANDTEX Leather",
+    title: "GRANDTEX - Производство одежды полного цикла",
+    description: "Швейная фабрика GRANDTEX - производство качественной одежды с гарантией. Полный цикл от лекал до готовой продукции.",
+    url: "https://grandtex.ru/",
+    siteName: "GRANDTEX",
     locale: "ru_RU",
     type: "website",
     images: [
@@ -34,14 +46,14 @@ export const metadata: Metadata = {
         url: "https://ext.same-assets.com/1118492138/3414069527.jpeg",
         width: 1200,
         height: 630,
-        alt: "GRANDTEX Leather",
+        alt: "GRANDTEX",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "GRANDTEX | Ваш партнёр по кожевенному производству, ориентированный на будущее",
-    description: "GRANDTEX — ваш партнёр по высококачественным кожаным изделиям, уделяющий особое внимание устойчивости и инновационным решениям для мировых брендов.",
+    title: "GRANDTEX - Производство одежды полного цикла",
+    description: "Швейная фабрика GRANDTEX - производство качественной одежды с гарантией. Полный цикл от лекал до готовой продукции.",
     images: ["https://ext.same-assets.com/1118492138/3414069527.jpeg"],
   },
   icons: {
@@ -67,7 +79,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-      <html lang="ru" className="scroll-smooth">
+      <html lang="ru" className={`${montserrat.variable} ${openSans.variable} scroll-smooth`}>
       <head>
         <Script
           crossOrigin="anonymous"
