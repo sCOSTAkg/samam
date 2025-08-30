@@ -49,14 +49,6 @@ export default function Footer() {
           <ul className="space-y-2">
             <li>
               <Link
-                href="/about-grandtex"
-                className="text-gray-600 hover:text-black"
-              >
-                О GRANDTEX
-              </Link>
-            </li>
-            <li>
-              <Link
                 href="/why-grandtex"
                 className="text-gray-600 hover:text-black"
               >
@@ -91,18 +83,22 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-gray-300 flex flex-col md:flex-row justify-between items-center">
         <p className="text-gray-600 text-sm">© 2025 GRANDTEX</p>
         <div className="flex space-x-6 mt-4 md:mt-0">
-          <Link
+          <a
             href="https://www.linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-gray-600 hover:text-black"
           >
             LinkedIn
-          </Link>
-          <Link
+          </a>
+          <a
             href="https://www.instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-gray-600 hover:text-black"
           >
             Instagram
-          </Link>
+          </a>
         </div>
       </div>
     </footer>
