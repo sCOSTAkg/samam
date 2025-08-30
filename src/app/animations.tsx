@@ -1,7 +1,11 @@
-'use client';
+"use client";
 
-import { useEffect } from 'react';
-import { initScrollAnimations, initParallaxEffect, initProductHoverEffects } from '@/lib/animate';
+import { useEffect } from "react";
+import {
+  initScrollAnimations,
+  initParallaxEffect,
+  initProductHoverEffects,
+} from "@/lib/animate";
 
 export default function Animations() {
   useEffect(() => {
@@ -12,11 +16,12 @@ export default function Animations() {
     const cleanupParallax = initParallaxEffect();
 
     // Initialize product hover effects
-    initProductHoverEffects();
+    const cleanupProductHover = initProductHoverEffects();
 
     // Cleanup on unmount
     return () => {
       if (cleanupParallax) cleanupParallax();
+      if (cleanupProductHover) cleanupProductHover();
     };
   }, []);
 
