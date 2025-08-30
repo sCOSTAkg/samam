@@ -267,7 +267,7 @@ export default function WhyGrandtexPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-gray-800 p-8 rounded-lg">
-              <div className="text-2xl text-accent mb-4">"</div>
+              <div className="text-2xl text-accent mb-4">&quot;</div>
               <p className="text-lg mb-6">
                 GRANDTEX постоянно поставляет исключительную кожу,
                 соответствующую нашим строгим стандартам. Их техническая
@@ -283,7 +283,7 @@ export default function WhyGrandtexPage() {
             </div>
 
             <div className="bg-gray-800 p-8 rounded-lg">
-              <div className="text-2xl text-accent mb-4">"</div>
+              <div className="text-2xl text-accent mb-4">&quot;</div>
               <p className="text-lg mb-6">
                 Будучи бутиковым производителем, мы ценим готовность GRANDTEX
                 работать с небольшими объёмами заказов, сохраняя при этом такой
