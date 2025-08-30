@@ -5,33 +5,33 @@ import MainLayout from '@/components/layout/MainLayout';
 export default function WhyGrandtexPage() {
   const advantages = [
     {
-      title: 'Quality Excellence',
-      description: 'Our commitment to quality is unwavering. We combine traditional craftsmanship with modern technology to create leathers that meet the highest standards of performance and aesthetics.',
+      title: 'Безупречное качество',
+      description: 'Наша приверженность качеству непоколебима. Мы объединяем традиционное мастерство с современными технологиями, создавая кожи, соответствующие высоким стандартам производительности и эстетики.',
       icon: '🏆'
     },
     {
-      title: 'Innovation',
-      description: 'We continuously invest in research and development to create innovative leather solutions that address the evolving needs of our customers and the industry.',
+      title: 'Инновации',
+      description: 'Мы постоянно инвестируем в исследования и разработки, создавая инновационные кожаные решения для меняющихся потребностей клиентов и отрасли.',
       icon: '💡'
     },
     {
-      title: 'Sustainability',
-      description: 'Environmental responsibility is at the core of our operations. We develop sustainable practices that minimize our impact while maximizing the quality of our products.',
+      title: 'Устойчивое развитие',
+      description: 'Экологическая ответственность лежит в основе нашей деятельности. Мы развиваем устойчивые практики, минимизируя воздействие и повышая качество продукции.',
       icon: '🌱'
     },
     {
-      title: 'Global Presence',
-      description: 'With strategic locations in key manufacturing regions, we provide efficient service and reliable delivery to customers around the world.',
+      title: 'Глобальное присутствие',
+      description: 'Благодаря стратегическим локациям в ключевых производственных регионах, мы обеспечиваем эффективный сервис и надёжную доставку клиентам по всему миру.',
       icon: '🌎'
     },
     {
-      title: 'Customer Focus',
-      description: 'We build lasting relationships with our customers through responsive service, collaborative development, and a deep understanding of their unique needs.',
+      title: 'Ориентация на клиента',
+      description: 'Мы строим долгосрочные отношения с клиентами благодаря оперативному сервису, совместной разработке и глубокому пониманию их уникальных потребностей.',
       icon: '👥'
     },
     {
-      title: 'Versatility',
-      description: 'Our diverse range of leathers caters to multiple applications, from footwear and accessories to upholstery and automotive.',
+      title: 'Универсальность',
+      description: 'Наш широкий ассортимент кож подходит для множества применений — от обуви и аксессуаров до обивки и автомобильной промышленности.',
       icon: '🔄'
     },
   ];
@@ -52,9 +52,9 @@ export default function WhyGrandtexPage() {
 
         <div className="relative z-10 h-full flex items-center">
           <div className="container mx-auto px-8">
-            <h1 className="text-5xl font-bold mb-4">Why GRANDTEX?</h1>
+            <h1 className="text-5xl font-bold mb-4">Почему GRANDTEX?</h1>
             <p className="text-xl max-w-2xl">
-              Discover what sets us apart as your trusted partner in premium leather solutions.
+              Узнайте, что делает нас вашим надёжным партнёром в области премиальных кожаных решений.
             </p>
           </div>
         </div>
@@ -63,15 +63,15 @@ export default function WhyGrandtexPage() {
       {/* Introduction */}
       <section className="py-16 px-8">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6">Your Future-Forward Tannery Partner</h2>
+          <h2 className="text-3xl font-bold mb-6">Ваш партнёр по кожевенному производству, ориентированный на будущее</h2>
 
           <div className="prose prose-lg max-w-none">
             <p>
-              At GRANDTEX, we don't just make leather—we create possibilities. As one of the world's leading tannery groups, we combine centuries-old craftsmanship with cutting-edge innovation to deliver leather products that exceed expectations in quality, sustainability, and performance.
+              В GRANDTEX мы не просто производим кожу — мы создаём возможности. Будучи одной из ведущих мировых кожевенных групп, мы объединяем многовековое мастерство с передовыми инновациями, создавая кожаные продукты, превосходящие ожидания по качеству, устойчивости и производительности.
             </p>
 
             <p>
-              What sets us apart is our unique ability to serve brands of all sizes with the same dedication to excellence. Whether you're a global footwear manufacturer producing millions of pairs annually or a boutique brand crafting limited-edition accessories, we bring the same commitment to quality, service, and innovation to every partnership.
+              Нас отличает уникальная способность обслуживать бренды любого масштаба с неизменной приверженностью совершенству. Будь вы мировым производителем обуви или бутик-брендом, создающим лимитированные аксессуары, мы сохраняем одинаковую приверженность качеству, сервису и инновациям в каждом сотрудничестве.
             </p>
           </div>
         </div>
@@ -80,7 +80,7 @@ export default function WhyGrandtexPage() {
       {/* Advantages Grid */}
       <section className="py-16 px-8 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold mb-12 text-center">The GRANDTEX Advantage</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">Преимущества GRANDTEX</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {advantages.map((advantage, index) => (
@@ -99,15 +99,15 @@ export default function WhyGrandtexPage() {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col lg:flex-row gap-12">
             <div className="lg:w-1/2">
-              <h2 className="text-3xl font-bold mb-6">Expert Team</h2>
+              <h2 className="text-3xl font-bold mb-6">Экспертная команда</h2>
 
               <div className="prose prose-lg max-w-none">
                 <p>
-                  Our team brings together leather experts from around the world, combining diverse perspectives and expertise to create exceptional products. From master tanners with decades of experience to innovative chemists and environmental specialists, our professionals collaborate to push the boundaries of what's possible in leather manufacturing.
+                  Наша команда объединяет специалистов по коже со всего мира, сочетая разнообразные взгляды и опыт для создания выдающихся продуктов. От мастеров-кожевенников с десятилетиями опыта до инновационных химиков и экологов — наши профессионалы работают вместе, расширяя границы возможного в кожевенном производстве.
                 </p>
 
                 <p>
-                  This blend of traditional knowledge and forward-thinking innovation enables us to address complex challenges, develop custom solutions, and continuously improve our products and processes.
+                  Такое сочетание традиционных знаний и инноваций позволяет нам решать сложные задачи, разрабатывать индивидуальные решения и постоянно совершенствовать продукты и процессы.
                 </p>
               </div>
 
@@ -151,15 +151,15 @@ export default function WhyGrandtexPage() {
             </div>
 
             <div className="lg:w-1/2 order-1 lg:order-2">
-              <h2 className="text-3xl font-bold mb-6">Technology & Innovation</h2>
+              <h2 className="text-3xl font-bold mb-6">Технологии и инновации</h2>
 
               <div className="prose prose-lg max-w-none">
                 <p>
-                  Our state-of-the-art facilities combine traditional tanning techniques with the latest technological innovations. This unique approach allows us to maintain the artisanal quality of our leathers while achieving consistency, efficiency, and sustainability at scale.
+                  Наши современные предприятия сочетают традиционные методы дубления с новейшими технологическими инновациями. Такой подход позволяет сохранять ремесленное качество кожи, одновременно достигая стабильности, эффективности и устойчивости в масштабах.
                 </p>
 
                 <p>
-                  We invest continuously in research and development, collaborating with leading institutions and technology partners to pioneer new processes, materials, and applications. From water-saving technologies to innovative finishing techniques, our commitment to advancement drives everything we do.
+                  Мы постоянно инвестируем в исследования и разработки, сотрудничая с ведущими институтами и технологическими партнёрами, чтобы внедрять новые процессы, материалы и применения. От водосберегающих технологий до инновационных отделок — стремление к прогрессу лежит в основе всего, что мы делаем.
                 </p>
               </div>
 
@@ -168,7 +168,7 @@ export default function WhyGrandtexPage() {
                   href="/tanneries"
                   className="px-6 py-3 border border-black rounded-full inline-block"
                 >
-                  Explore Our Facilities
+                  Изучить наши предприятия
                 </Link>
               </div>
             </div>
@@ -179,30 +179,30 @@ export default function WhyGrandtexPage() {
       {/* Customer-Centric Approach */}
       <section className="py-16 px-8">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold mb-12 text-center">Our Customer-Centric Approach</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">Наш клиенториентированный подход</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="w-20 h-20 bg-accent rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">1</div>
-              <h3 className="text-xl font-bold mb-3">Understand</h3>
+              <h3 className="text-xl font-bold mb-3">Понимание</h3>
               <p className="text-gray-700">
-                We take the time to truly understand your needs, challenges, and vision, building a foundation for successful collaboration.
+                Мы уделяем время, чтобы по-настоящему понять ваши потребности, задачи и видение, создавая основу для успешного сотрудничества.
               </p>
             </div>
 
             <div className="text-center">
               <div className="w-20 h-20 bg-accent rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">2</div>
-              <h3 className="text-xl font-bold mb-3">Collaborate</h3>
+              <h3 className="text-xl font-bold mb-3">Сотрудничество</h3>
               <p className="text-gray-700">
-                Our team works closely with yours, combining expertise to develop solutions that address your specific requirements.
+                Наша команда тесно сотрудничает с вашей, объединяя экспертизу для разработки решений, отвечающих вашим требованиям.
               </p>
             </div>
 
             <div className="text-center">
               <div className="w-20 h-20 bg-accent rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">3</div>
-              <h3 className="text-xl font-bold mb-3">Deliver</h3>
+              <h3 className="text-xl font-bold mb-3">Реализация</h3>
               <p className="text-gray-700">
-                We execute with precision, providing high-quality leathers on time and to specification, with reliable support throughout.
+                Мы выполняем работу точно и в срок, предоставляя высококачественные кожи и надёжную поддержку на всех этапах.
               </p>
             </div>
           </div>
@@ -212,13 +212,13 @@ export default function WhyGrandtexPage() {
       {/* Testimonials */}
       <section className="py-16 px-8 bg-gray-900 text-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold mb-12 text-center">What Our Partners Say</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">Что говорят наши партнёры</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-gray-800 p-8 rounded-lg">
               <div className="text-2xl text-accent mb-4">"</div>
               <p className="text-lg mb-6">
-                GRANDTEX consistently delivers exceptional leather that meets our exacting standards. Their technical expertise and collaborative approach have made them an invaluable partner in our product development process.
+                GRANDTEX постоянно поставляет исключительную кожу, соответствующую нашим строгим стандартам. Их техническая экспертиза и совместный подход сделали их незаменимым партнёром в процессе разработки продукции.
               </p>
               <div>
                 <p className="font-bold">Sarah Johnson</p>
@@ -229,7 +229,7 @@ export default function WhyGrandtexPage() {
             <div className="bg-gray-800 p-8 rounded-lg">
               <div className="text-2xl text-accent mb-4">"</div>
               <p className="text-lg mb-6">
-                As a boutique manufacturer, we appreciate GRANDTEX's willingness to work with smaller order quantities while maintaining the same level of quality and service they provide to larger brands.
+                Будучи бутиковым производителем, мы ценим готовность GRANDTEX работать с небольшими объёмами заказов, сохраняя при этом такой же уровень качества и сервиса, как и для крупных брендов.
               </p>
               <div>
                 <p className="font-bold">Michael Chen</p>
@@ -243,12 +243,12 @@ export default function WhyGrandtexPage() {
       {/* CTA Section */}
       <section className="py-16 px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to Experience the GRANDTEX Difference?</h2>
+          <h2 className="text-3xl font-bold mb-4">Готовы ощутить преимущество GRANDTEX?</h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto">
-            Contact our team today to discuss your leather needs and discover how we can help you achieve your goals.
+            Свяжитесь с нашей командой, чтобы обсудить ваши потребности в коже и узнать, как мы можем помочь вам достичь целей.
           </p>
           <Link href="/contact" className="px-8 py-3 bg-black text-white rounded-full text-lg inline-block">
-            Get in Touch
+            Связаться
           </Link>
         </div>
       </section>

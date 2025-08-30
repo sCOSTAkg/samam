@@ -6,11 +6,11 @@ const getCollection = (id: string) => {
   const collections = {
     'spring-summer-2027': {
       id: 'spring-summer-2027',
-      title: 'Spring-Summer 27',
-      headline: 'Accelerate Ahead',
-      description: 'From court to commute, SS27 reflects the depth and range of what GRANDTEX does best—crafting versatile leathers that scale with your needs.',
-      longDescription: "As part of our rebrand, this season marks a renewed commitment to serving brands of every size with precision, purpose, and partnership. Whether you're building high-volume lines or limited-run silhouettes, our products are designed to adapt. From smooth full grains to rugged nubucks, each leather is a result of expert craftsmanship and industrial precision—backed by a brand identity built to accelerate ahead. This is GRANDTEX—refreshed, refined, and ready to move with you.",
-      season: 'Spring-Summer',
+      title: 'Весна-Лето 27',
+      headline: 'Двигайтесь вперёд',
+      description: 'От спортзала до поездки на работу SS27 отражает глубину и масштаб того, что GRANDTEX делает лучше всего — создаёт универсальные кожи, которые адаптируются к вашим потребностям.',
+      longDescription: "В рамках нашего ребрендинга этот сезон ознаменует обновлённую приверженность обслуживать бренды любого размера с точностью, целью и партнёрством. Независимо от того, создаёте ли вы массовые линии или ограниченные серии, наши продукты готовы адаптироваться. От гладких фул-грейнов до грубых нубуков — каждая кожа является результатом экспертизы и индустриальной точности, поддержанной брендом, созданным двигаться вперёд. Это GRANDTEX — обновлённый, утончённый и готовый идти вместе с вами.",
+      season: 'Весна-Лето',
       year: '2027',
       mainImage: 'https://ext.same-assets.com/1118492138/1829320189.jpeg',
       galleryImages: [
@@ -47,26 +47,26 @@ const getCollection = (id: string) => {
       ],
       themes: [
         {
-          title: 'Natural Versatility',
-          description: 'Leathers designed to adapt to multiple applications while maintaining their natural appeal.',
+          title: 'Естественная универсальность',
+          description: 'Кожи, созданные для различных применений при сохранении природной привлекательности.',
         },
         {
-          title: 'Urban Performance',
-          description: 'Durable yet refined leathers that stand up to city life without sacrificing style.',
+          title: 'Городская функциональность',
+          description: 'Прочные, но изысканные кожи, выдерживающие городской ритм, не жертвуя стилем.',
         },
         {
-          title: 'Sustainable Luxury',
-          description: 'Premium leathers created with environmentally responsible processes.',
+          title: 'Устойчивая роскошь',
+          description: 'Премиальные кожи, созданные с использованием экологически ответственных процессов.',
         },
       ]
     },
     'fw26': {
       id: 'fw26',
-      title: 'Fall-Winter 26',
-      headline: 'Enduring Elegance',
-      description: 'Our Fall-Winter 26 collection combines durability with sophistication, offering premium leathers designed for the colder season.',
-      longDescription: "The Fall-Winter 26 collection draws inspiration from the resilience of nature during winter months. We've developed leathers that provide warmth and protection without compromising on style or flexibility. This season features rich textures, deep tones, and innovative finishes that perform beautifully in challenging conditions. Each leather in the collection has been tested for durability, weather resistance, and comfort, ensuring they meet the demands of both designers and end users.",
-      season: 'Fall-Winter',
+      title: 'Осень-Зима 26',
+      headline: 'Непреходящая элегантность',
+      description: 'Наша коллекция Осень-Зима 26 сочетает прочность и изысканность, предлагая премиальные кожи, разработанные для холодного сезона.',
+      longDescription: "Коллекция Осень-Зима 26 вдохновлена устойчивостью природы в зимние месяцы. Мы разработали кожи, обеспечивающие тепло и защиту, не уступая в стиле и гибкости. Этот сезон характеризуется богатыми текстурами, глубокими оттенками и инновационными отделками, которые прекрасно работают в сложных условиях. Каждая кожа прошла тестирование на долговечность, устойчивость к погоде и комфорт, чтобы удовлетворить требования дизайнеров и конечных пользователей.",
+      season: 'Осень-Зима',
       year: '2026',
       mainImage: 'https://ext.same-assets.com/1118492138/68077734.jpeg',
       galleryImages: [
@@ -91,16 +91,16 @@ const getCollection = (id: string) => {
       ],
       themes: [
         {
-          title: 'Winter Resilience',
-          description: 'Leathers that maintain their character and performance in cold, wet conditions.',
+          title: 'Зимняя устойчивость',
+          description: 'Кожи, сохраняющие свои качества и внешний вид в холодных и влажных условиях.',
         },
         {
-          title: 'Tactile Depth',
-          description: 'Rich textures that add dimension and interest to seasonal designs.',
+          title: 'Тактильная глубина',
+          description: 'Богатые текстуры, придающие объём и интерес сезонным дизайнам.',
         },
         {
-          title: 'Refined Protection',
-          description: 'Elegant finishes with enhanced durability for winter wear.',
+          title: 'Изысканная защита',
+          description: 'Элегантные отделки с повышенной долговечностью для зимней носки.',
         },
       ]
     },
@@ -117,10 +117,10 @@ export default async function CollectionDetailPage({ params }: { params: Promise
     return (
       <MainLayout>
         <div className="py-40 px-8 text-center">
-          <h1 className="text-3xl font-bold mb-4">Collection Not Found</h1>
-          <p className="mb-8">The collection you're looking for doesn't exist or has been removed.</p>
+          <h1 className="text-3xl font-bold mb-4">Коллекция не найдена</h1>
+          <p className="mb-8">Коллекция, которую вы ищете, не существует или была удалена.</p>
           <Link href="/collections" className="px-6 py-2 bg-black text-white rounded-full">
-            Back to Collections
+            Назад к коллекциям
           </Link>
         </div>
       </MainLayout>
@@ -158,13 +158,13 @@ export default async function CollectionDetailPage({ params }: { params: Promise
           <div className="container mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               <div>
-                <h2 className="text-3xl font-bold mb-6">Collection Overview</h2>
+                <h2 className="text-3xl font-bold mb-6">Обзор коллекции</h2>
                 <div className="prose prose-lg max-w-none">
                   <p>{collection.longDescription}</p>
                 </div>
 
                 <div className="mt-8">
-                  <h3 className="text-xl font-bold mb-4">Collection Themes</h3>
+                  <h3 className="text-xl font-bold mb-4">Темы коллекции</h3>
                   <div className="space-y-4">
                     {collection.themes.map((theme, index) => (
                       <div key={index} className="bg-gray-50 p-5 rounded-md">
@@ -180,7 +180,7 @@ export default async function CollectionDetailPage({ params }: { params: Promise
                     href="#"
                     className="px-6 py-3 bg-black text-white rounded-full inline-block"
                   >
-                    Download Lookbook
+                    Скачать лукбук
                   </Link>
                 </div>
               </div>
@@ -209,7 +209,7 @@ export default async function CollectionDetailPage({ params }: { params: Promise
         {/* Collection Products */}
         <section className="py-16 px-8 bg-gray-50">
           <div className="container mx-auto">
-            <h2 className="text-3xl font-bold mb-12">Featured Leathers</h2>
+            <h2 className="text-3xl font-bold mb-12">Избранные кожи</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {collection.products.map((product) => (
@@ -241,7 +241,7 @@ export default async function CollectionDetailPage({ params }: { params: Promise
                 href="/leathers"
                 className="px-6 py-3 border border-black rounded-full inline-block"
               >
-                View All Leathers
+                Посмотреть все кожи
               </Link>
             </div>
           </div>
@@ -250,18 +250,18 @@ export default async function CollectionDetailPage({ params }: { params: Promise
         {/* Applications Section */}
         <section className="py-16 px-8">
           <div className="container mx-auto">
-            <h2 className="text-3xl font-bold mb-6">Applications</h2>
+            <h2 className="text-3xl font-bold mb-6">Применения</h2>
             <p className="text-lg text-gray-700 mb-12 max-w-3xl">
-              The {collection.title} collection is designed for versatility across multiple product categories. Here are some key applications for this season's leathers.
+              Коллекция {collection.title} создана для универсального использования в различных категориях продукции. Вот некоторые ключевые области применения кож этого сезона.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {['Footwear', 'Accessories', 'Apparel', 'Home Goods'].map((application, index) => (
+              {['Обувь', 'Аксессуары', 'Одежда', 'Товары для дома'].map((application, index) => (
                 <div key={index} className="text-center">
                   <div className="w-20 h-20 bg-gray-200 rounded-full mx-auto mb-4"></div>
                   <h3 className="text-xl font-bold mb-2">{application}</h3>
                   <p className="text-gray-700">
-                    Leathers specially developed to excel in {application.toLowerCase()} applications.
+                    Кожи, специально разработанные для превосходных результатов в области {application.toLowerCase()}.
                   </p>
                 </div>
               ))}
@@ -272,22 +272,22 @@ export default async function CollectionDetailPage({ params }: { params: Promise
         {/* Contact Section */}
         <section className="py-16 px-8 bg-gray-900 text-white">
           <div className="container mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-4">Interested in this Collection?</h2>
+            <h2 className="text-3xl font-bold mb-4">Заинтересованы в этой коллекции?</h2>
             <p className="text-lg mb-8 max-w-2xl mx-auto">
-              Contact our team to request samples, detailed specifications, or to discuss custom applications.
+              Свяжитесь с нашей командой, чтобы запросить образцы, подробные спецификации или обсудить индивидуальные применения.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link
                 href="/contact"
                 className="px-6 py-3 bg-white text-gray-900 rounded-full"
               >
-                Request Samples
+                Запросить образцы
               </Link>
               <Link
                 href="/contact"
                 className="px-6 py-3 border border-white text-white rounded-full"
               >
-                Contact Sales
+                Связаться с отделом продаж
               </Link>
             </div>
           </div>

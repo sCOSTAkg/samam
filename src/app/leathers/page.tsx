@@ -77,9 +77,9 @@ export default function LeathersPage() {
 
         <div className="relative z-10 h-full flex items-center">
           <div className="container mx-auto px-8">
-            <h1 className="text-5xl font-bold mb-4">Our Leathers</h1>
+            <h1 className="text-5xl font-bold mb-4">Наши кожи</h1>
             <p className="text-xl max-w-2xl">
-              Discover our premium leather products, crafted with expertise and sustainable practices.
+              Откройте для себя наши премиальные кожаные продукты, созданные с мастерством и устойчивыми практиками.
             </p>
           </div>
         </div>
@@ -91,34 +91,34 @@ export default function LeathersPage() {
           <div className="flex flex-wrap gap-4 justify-between items-center">
             <div className="flex flex-wrap gap-4">
               <select className="px-4 py-2 border border-gray-300 rounded-md bg-white">
-                <option>All Collections</option>
-                <option>Spring-Summer 27</option>
-                <option>Fall-Winter 26</option>
+                <option>Все коллекции</option>
+                <option>Весна-Лето 27</option>
+                <option>Осень-Зима 26</option>
               </select>
 
               <select className="px-4 py-2 border border-gray-300 rounded-md bg-white">
-                <option>All Types</option>
-                <option>Grain</option>
-                <option>Nubuck</option>
-                <option>Split</option>
-                <option>Lining</option>
+                <option>Все типы</option>
+                <option>Грейн</option>
+                <option>Нубук</option>
+                <option>Спилок</option>
+                <option>Подкладка</option>
               </select>
 
               <select className="px-4 py-2 border border-gray-300 rounded-md bg-white">
-                <option>All Treatments</option>
-                <option>Aniline</option>
-                <option>Semi-Aniline</option>
-                <option>Specialty</option>
-                <option>Waxed</option>
+                <option>Все обработки</option>
+                <option>Анилиновая</option>
+                <option>Полуанилиновая</option>
+                <option>Специальная</option>
+                <option>Вощёная</option>
               </select>
             </div>
 
             <div className="flex items-center gap-2">
-              <span className="text-sm text-gray-500">Sort by:</span>
+              <span className="text-sm text-gray-500">Сортировать по:</span>
               <select className="px-4 py-2 border border-gray-300 rounded-md bg-white">
-                <option>Newest</option>
-                <option>Name (A-Z)</option>
-                <option>Collection</option>
+                <option>Новизне</option>
+                <option>Название (А-Я)</option>
+                <option>Коллекции</option>
               </select>
             </div>
           </div>
@@ -145,19 +145,19 @@ export default function LeathersPage() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold group-hover:text-accent transition-colors">{product.name}</h3>
-                  <p className="text-sm text-gray-500">{product.collection} Collection</p>
+                  <p className="text-sm text-gray-500">Коллекция {product.collection}</p>
 
                   <div className="mt-4 grid grid-cols-2 gap-x-4 gap-y-2">
                     <div>
-                      <span className="text-xs font-medium text-gray-500">TYPE</span>
+                      <span className="text-xs font-medium text-gray-500">ТИП</span>
                       <p className="text-sm">{product.type}</p>
                     </div>
                     <div>
-                      <span className="text-xs font-medium text-gray-500">FINISH</span>
+                      <span className="text-xs font-medium text-gray-500">ОТДЕЛКА</span>
                       <p className="text-sm">{product.finish}</p>
                     </div>
                     <div>
-                      <span className="text-xs font-medium text-gray-500">TREATMENT</span>
+                      <span className="text-xs font-medium text-gray-500">ОБРАБОТКА</span>
                       <p className="text-sm">{product.treatment}</p>
                     </div>
                   </div>
@@ -171,12 +171,12 @@ export default function LeathersPage() {
       {/* Request Samples CTA */}
       <section className="py-16 px-8 bg-gray-100">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">Request Samples</h2>
+          <h2 className="text-3xl font-bold mb-4">Запросить образцы</h2>
           <p className="text-lg mb-8 max-w-2xl mx-auto">
-            Interested in our leather products? Request physical samples to experience the quality firsthand.
+            Интересуетесь нашей кожаной продукцией? Запросите физические образцы, чтобы лично оценить качество.
           </p>
           <Link href="/contact" className="px-8 py-3 bg-black text-white rounded-full text-lg inline-block">
-            Contact Us
+            Связаться с нами
           </Link>
         </div>
       </section>

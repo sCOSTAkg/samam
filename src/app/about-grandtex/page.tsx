@@ -19,9 +19,9 @@ export default function AboutPage() {
 
         <div className="relative z-10 h-full flex items-center">
           <div className="container mx-auto px-8">
-            <h1 className="text-5xl font-bold mb-4">About GRANDTEX</h1>
+            <h1 className="text-5xl font-bold mb-4">О GRANDTEX</h1>
             <p className="text-xl max-w-2xl">
-              Discover the story behind GRANDTEX, a global leader in leather manufacturing.
+              Узнайте историю GRANDTEX — мирового лидера в производстве кожи.
             </p>
           </div>
         </div>
@@ -30,55 +30,55 @@ export default function AboutPage() {
       {/* About Content */}
       <section className="py-16 px-8">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">Our Story</h2>
+          <h2 className="text-3xl font-bold mb-8">Наша история</h2>
 
           <div className="prose prose-lg max-w-none">
             <p>
-              GRANDTEX was born out of a desire to bridge the traditional leather making process of a decades-old tannery business with the expansion of the footwear industry in Asia.
+              GRANDTEX возник из желания объединить традиционный процесс изготовления кожи многолетнего кожевенного бизнеса с развитием обувной промышленности в Азии.
             </p>
 
             <p>
-              In 1999, two of America's leading tanners partnered with a global footwear manufacturer to establish GRANDTEX, creating a new business model that offered premium quality leather with reliable delivery in footwear manufacturing regions. The business strategy centered on building tanneries that adapted traditional American leather making expertise to meet the quality, cost, and delivery expectations of a rapidly evolving global footwear industry.
+              В 1999 году два ведущих американских кожевенника объединились с мировым производителем обуви, чтобы создать GRANDTEX, сформировав новую бизнес-модель, предлагающую высококачественную кожу с надёжной доставкой в регионы производства обуви. Стратегия заключалась в создании кожевенных заводов, адаптировавших традиционный американский опыт к ожиданиям стремительно развивающейся мировой обувной индустрии.
             </p>
 
             <p>
-              The foundation of GRANDTEX's culture was built on the combination of American tanning expertise with the most progressive Asian manufacturing practices. This created an environment where traditional craftsmanship merged with modern manufacturing techniques, resulting in innovative and efficient leather production methods.
+              Основа культуры GRANDTEX строилась на сочетании американского кожевенного мастерства с передовыми азиатскими производственными практиками. Это создало среду, где традиционное ремесло объединяется с современными технологиями, приводя к инновационным и эффективным методам производства кожи.
             </p>
 
             <p>
-              Today, GRANDTEX operates two strategically located tanneries: one in Vietnam to serve the Southeast Asian footwear industry, and another in China serving the domestic Chinese market. Each facility employs skilled workers and maintains the highest quality standards, with a focus on implementing sustainable practices.
+              Сегодня GRANDTEX управляет двумя стратегически расположенными кожевенными заводами: один во Вьетнаме для обслуживания индустрии обуви Юго-Восточной Азии и другой в Китае для внутреннего китайского рынка. Каждое предприятие нанимает квалифицированных работников и поддерживает самые высокие стандарты качества, уделяя особое внимание устойчивым практикам.
             </p>
 
             <p>
-              As we look to the future, GRANDTEX remains committed to innovation, sustainability, and maintaining the highest quality standards in leather production. We continue to invest in new technologies and processes that reduce our environmental impact while enhancing the performance and aesthetics of our leather products.
+              Смотря в будущее, GRANDTEX остаётся приверженным инновациям, устойчивому развитию и соблюдению самых высоких стандартов качества в производстве кожи. Мы продолжаем инвестировать в новые технологии и процессы, которые снижают наше влияние на окружающую среду и повышают характеристики и внешний вид нашей продукции.
             </p>
           </div>
 
           <div className="my-16 grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-gray-100 p-8 rounded-lg">
-              <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
+              <h3 className="text-2xl font-bold mb-4">Наша миссия</h3>
               <p className="text-gray-700">
-                To create exceptional leather products through innovative and sustainable practices, serving as a trusted partner to brands around the world.
+                Создавать исключительные кожаные изделия благодаря инновационным и устойчивым практикам, выступая надёжным партнёром для брендов по всему миру.
               </p>
             </div>
 
             <div className="bg-gray-100 p-8 rounded-lg">
-              <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
+              <h3 className="text-2xl font-bold mb-4">Наше видение</h3>
               <p className="text-gray-700">
-                To lead the leather industry in sustainability, innovation, and quality, setting new standards for responsible manufacturing.
+                Быть лидером кожевенной индустрии в области устойчивости, инноваций и качества, устанавливая новые стандарты ответственного производства.
               </p>
             </div>
           </div>
 
           <div className="mt-16">
-            <h2 className="text-3xl font-bold mb-8">Leadership Team</h2>
+            <h2 className="text-3xl font-bold mb-8">Команда руководителей</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[1, 2, 3].map((i) => (
                 <div key={i} className="text-center">
                   <div className="aspect-square bg-gray-200 rounded-full w-48 h-48 mx-auto mb-4"></div>
-                  <h3 className="text-xl font-bold">Executive Name</h3>
-                  <p className="text-gray-500">Position</p>
+                  <h3 className="text-xl font-bold">Имя руководителя</h3>
+                  <p className="text-gray-500">Должность</p>
                 </div>
               ))}
             </div>
@@ -89,12 +89,12 @@ export default function AboutPage() {
       {/* CTA Section */}
       <section className="py-16 px-8 bg-gray-100">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">Join Our Journey</h2>
+          <h2 className="text-3xl font-bold mb-4">Присоединяйтесь к нашему пути</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Discover how GRANDTEX can be your partner in creating high-quality, sustainable leather products.
+            Узнайте, как GRANDTEX может стать вашим партнёром в создании высококачественных и устойчивых кожаных изделий.
           </p>
           <Link href="/contact" className="px-8 py-3 bg-black text-white rounded-full text-lg inline-block">
-            Contact Us
+            Свяжитесь с нами
           </Link>
         </div>
       </section>

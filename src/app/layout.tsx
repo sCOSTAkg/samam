@@ -8,11 +8,11 @@ import Animations from './animations';
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | GRANDTEX Leather",
-    default: "GRANDTEX | Your Future-Forward Tannery Partner",
+    template: "%s | GRANDTEX Кожа",
+    default: "GRANDTEX | Ваш партнёр по кожевенному производству, ориентированный на будущее",
   },
-  description: "GRANDTEX is your partner for high-quality leather products, focusing on sustainability and innovative leather solutions for global brands.",
-  keywords: ["leather", "tannery", "sustainable leather", "footwear leather", "premium leather", "leather manufacturing"],
+  description: "GRANDTEX — ваш партнёр по высококачественным кожаным изделиям, уделяющий особое внимание устойчивости и инновационным решениям для мировых брендов.",
+  keywords: ["кожа", "кожевенный завод", "устойчивая кожа", "кожа для обуви", "премиальная кожа", "производство кожи"],
   authors: [{ name: "GRANDTEX" }],
   creator: "GRANDTEX",
   publisher: "GRANDTEX",
@@ -23,11 +23,11 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL("https://grandtex-leather.netlify.app"),
   openGraph: {
-    title: "GRANDTEX | Your Future-Forward Tannery Partner",
-    description: "GRANDTEX is your partner for high-quality leather products, focusing on sustainability and innovative leather solutions for global brands.",
+    title: "GRANDTEX | Ваш партнёр по кожевенному производству, ориентированный на будущее",
+    description: "GRANDTEX — ваш партнёр по высококачественным кожаным изделиям, уделяющий особое внимание устойчивости и инновационным решениям для мировых брендов.",
     url: "https://grandtex-leather.netlify.app",
     siteName: "GRANDTEX Leather",
-    locale: "en_US",
+    locale: "ru_RU",
     type: "website",
     images: [
       {
@@ -40,8 +40,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "GRANDTEX | Your Future-Forward Tannery Partner",
-    description: "GRANDTEX is your partner for high-quality leather products, focusing on sustainability and innovative leather solutions for global brands.",
+    title: "GRANDTEX | Ваш партнёр по кожевенному производству, ориентированный на будущее",
+    description: "GRANDTEX — ваш партнёр по высококачественным кожаным изделиям, уделяющий особое внимание устойчивости и инновационным решениям для мировых брендов.",
     images: ["https://ext.same-assets.com/1118492138/3414069527.jpeg"],
   },
   icons: {
@@ -67,7 +67,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-      <html lang="en" className="scroll-smooth">
+      <html lang="ru" className="scroll-smooth">
       <head>
         <Script
           crossOrigin="anonymous"

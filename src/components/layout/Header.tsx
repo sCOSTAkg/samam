@@ -30,77 +30,77 @@ export default function Header({ transparent = false }) {
 
   const navLinks = [
     {
-      title: 'Leathers',
+      title: 'Кожи',
       href: '/leathers',
       image: 'https://ext.same-assets.com/1118492138/3442149313.jpeg',
       subLinks: [
         {
-          title: 'Spring-Summer 27 Collection',
+          title: 'Коллекция Весна-Лето 27',
           href: '/collections/spring-summer-2027'
         },
         {
-          title: 'Fall-Winter 26 Collection',
+          title: 'Коллекция Осень-Зима 26',
           href: '/collections/fw26'
         }
       ]
     },
     {
-      title: 'Emboss & Perforation',
+      title: 'Тиснение и перфорация',
       href: '/emboss-perforation',
       image: 'https://ext.same-assets.com/1118492138/3513175735.jpeg',
     },
     {
-      title: 'Why GRANDTEX?',
+      title: 'Почему GRANDTEX?',
       href: '/why-grandtex',
       image: 'https://ext.same-assets.com/1118492138/2560085916.jpeg',
       subLinks: [
         {
-          title: 'About GRANDTEX',
+          title: 'О GRANDTEX',
           href: '/about-grandtex'
         },
         {
-          title: 'Tanneries',
+          title: 'Кожевенные заводы',
           href: '/tanneries'
         }
       ]
     },
     {
-      title: 'Sustainability',
+      title: 'Устойчивое развитие',
       href: '/sustainability',
       image: 'https://ext.same-assets.com/1118492138/180971912.jpeg',
       subLinks: [
         {
-          title: 'Operational Excellence',
+          title: 'Операционное совершенство',
           href: '/sustainability#operational-excellence'
         },
         {
-          title: 'Circularity',
+          title: 'Цикличность',
           href: '/sustainability#circularity'
         },
         {
-          title: 'Climate Action',
+          title: 'Борьба с изменением климата',
           href: '/sustainability#climate-action'
         },
         {
-          title: 'Social Impact',
+          title: 'Социальное влияние',
           href: '/sustainability#social-impact'
         }
       ]
     },
     {
-      title: 'Highlights',
+      title: 'Достижения',
       href: '/highlights'
     },
     {
-      title: 'Education',
+      title: 'Образование',
       href: '/education'
     },
     {
-      title: 'Locations',
+      title: 'Адреса',
       href: '/contact'
     },
     {
-      title: 'Resources',
+      title: 'Ресурсы',
       href: '/resources'
     }
   ];
@@ -121,7 +121,7 @@ export default function Header({ transparent = false }) {
               className={`flex items-center space-x-2 transition-colors duration-300 ${textClasses} hover:opacity-75`}
               onClick={() => setIsMenuOpen(true)}
             >
-              <span>Menu</span>
+              <span>Меню</span>
             </button>
           </SheetTrigger>
           <SheetContent
@@ -137,7 +137,7 @@ export default function Header({ transparent = false }) {
                   className="text-gray-500 hover:text-black transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Close
+                  Закрыть
                 </button>
               </div>
 
@@ -189,7 +189,7 @@ export default function Header({ transparent = false }) {
                   </div>
 
                   <div className="space-y-4">
-                    <h2 className="text-lg font-medium">More Information</h2>
+                    <h2 className="text-lg font-medium">Дополнительная информация</h2>
                     <ul className="grid grid-cols-2 gap-y-2 gap-x-4">
                       {navLinks.slice(4).map((link) => (
                         <li key={link.title}>
@@ -232,7 +232,7 @@ export default function Header({ transparent = false }) {
                     href="/contact"
                     className="px-6 py-2 bg-black text-white rounded-full hover:bg-gray-800 transition-colors"
                   >
-                    Contact
+                    Контакты
                   </Link>
                 </div>
               </div>
