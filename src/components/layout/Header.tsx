@@ -3,13 +3,12 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
 import { usePathname } from "next/navigation";
 import { Menu } from "lucide-react";
 
 export default function Header({ transparent = false }) {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -89,7 +88,6 @@ export default function Header({ transparent = false }) {
               <button
                 aria-label="Открыть меню"
                 className={`md:hidden flex items-center transition-colors duration-300 ${textClasses} hover:opacity-75`}
-                onClick={() => setIsMenuOpen(true)}
               >
                 <Menu className="h-6 w-6" />
               </button>
@@ -103,18 +101,15 @@ export default function Header({ transparent = false }) {
                   <Link href="/" className="text-3xl font-bold">
                     grandtex
                   </Link>
-                  <button
-                    className="text-gray-500 hover:text-black transition-colors"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
+                  <SheetClose className="text-gray-500 hover:text-black transition-colors">
                     Закрыть
-                  </button>
+                  </SheetClose>
                 </div>
 
                 <div className="flex-1 overflow-auto px-8 py-10">
                   <nav className="space-y-12">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                      {navLinks.slice(0, 4).map((link, index) => (
+                      {navLinks.slice(0, 4).map((link) => (
                         <div key={link.title} className="space-y-4">
                           <Link
                             href={link.href}

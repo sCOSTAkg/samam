@@ -14,6 +14,7 @@ export default function ClientBody({
     document.body.className = "antialiased font-inter bg-background";
     initScrollAnimations();
     const cleanupParallax = initParallaxEffect();
+    return cleanupParallax;
   }, []);
 
   return <div className="antialiased font-inter">{children}</div>;
