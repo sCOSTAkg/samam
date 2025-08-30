@@ -28,80 +28,35 @@ export default function Header({ transparent = false }) {
 
   const textClasses = transparent && !isScrolled ? 'text-white' : 'text-black';
 
-  const navLinks = [
+  const navLinks: {
+    title: string;
+    href: string;
+    image?: string;
+    subLinks?: { title: string; href: string }[];
+  }[] = [
     {
-      title: 'Кожи',
-      href: '/leathers',
-      image: 'https://ext.same-assets.com/1118492138/3442149313.jpeg',
-      subLinks: [
-        {
-          title: 'Коллекция Весна-Лето 27',
-          href: '/collections/spring-summer-2027'
-        },
-        {
-          title: 'Коллекция Осень-Зима 26',
-          href: '/collections/fw26'
-        }
-      ]
+      title: 'Услуги',
+      href: '/services',
     },
     {
-      title: 'Тиснение и перфорация',
-      href: '/emboss-perforation',
-      image: 'https://ext.same-assets.com/1118492138/3513175735.jpeg',
+      title: 'Производство',
+      href: '/production',
     },
     {
       title: 'Почему GRANDTEX?',
       href: '/why-grandtex',
-      image: 'https://ext.same-assets.com/1118492138/2560085916.jpeg',
-      subLinks: [
-        {
-          title: 'О GRANDTEX',
-          href: '/about-grandtex'
-        },
-        {
-          title: 'Кожевенные заводы',
-          href: '/tanneries'
-        }
-      ]
     },
     {
-      title: 'Устойчивое развитие',
-      href: '/sustainability',
-      image: 'https://ext.same-assets.com/1118492138/180971912.jpeg',
-      subLinks: [
-        {
-          title: 'Операционное совершенство',
-          href: '/sustainability#operational-excellence'
-        },
-        {
-          title: 'Цикличность',
-          href: '/sustainability#circularity'
-        },
-        {
-          title: 'Борьба с изменением климата',
-          href: '/sustainability#climate-action'
-        },
-        {
-          title: 'Социальное влияние',
-          href: '/sustainability#social-impact'
-        }
-      ]
+      title: 'Портфолио',
+      href: '/portfolio',
     },
     {
-      title: 'Достижения',
-      href: '/highlights'
+      title: 'Калькулятор стоимости',
+      href: '/calculator',
     },
     {
-      title: 'Образование',
-      href: '/education'
-    },
-    {
-      title: 'Адреса',
-      href: '/contact'
-    },
-    {
-      title: 'Ресурсы',
-      href: '/resources'
+      title: 'Контакты',
+      href: '/contact',
     }
   ];
 
