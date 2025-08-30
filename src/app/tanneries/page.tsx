@@ -43,7 +43,7 @@ export default function TanneriesPage() {
   return (
     <MainLayout>
       {/* Hero Section */}
-      <section className="relative w-full h-[50vh] bg-black text-white mt-20">
+      <section className="relative w-full min-h-[50vh] md:h-[50vh] bg-black text-white mt-20">
         <div className="absolute inset-0 z-0">
           <Image
             src="https://ext.same-assets.com/1118492138/3036160331.jpeg"

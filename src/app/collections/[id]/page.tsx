@@ -131,7 +131,7 @@ export default async function CollectionDetailPage({ params }: { params: Promise
     <MainLayout>
       <div className="mt-20">
         {/* Hero Section */}
-        <section className="relative w-full h-[60vh] bg-black text-white">
+        <section className="relative w-full min-h-[60vh] md:h-[60vh] bg-black text-white">
           <div className="absolute inset-0 z-0">
             <Image
               src={collection.mainImage}
