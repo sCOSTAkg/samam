@@ -82,8 +82,9 @@ const getLeatherProduct = (id: string) => {
   return products[id as keyof typeof products] || null;
 };
 
-export default function LeatherDetailPage({ params }: { params: { id: string } }) {
-  const product = getLeatherProduct(params.id);
+export default async function LeatherDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const product = getLeatherProduct(id);
 
   if (!product) {
     return (
@@ -232,7 +233,7 @@ export default function LeatherDetailPage({ params }: { params: { id: string } }
                 'sterling': getLeatherProduct('sterling'),
                 'opulent': getLeatherProduct('opulent'),
               } : {})
-                .filter(p => p.id !== params.id)
+                .filter(p => p.id !== id)
                 .slice(0, 3)
                 .map(relatedProduct => (
                 <Link

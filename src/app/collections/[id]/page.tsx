@@ -109,8 +109,9 @@ const getCollection = (id: string) => {
   return collections[id as keyof typeof collections] || null;
 };
 
-export default function CollectionDetailPage({ params }: { params: { id: string } }) {
-  const collection = getCollection(params.id);
+export default async function CollectionDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const collection = getCollection(id);
 
   if (!collection) {
     return (
